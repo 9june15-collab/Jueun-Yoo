@@ -4,6 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jueun Yoo</title>
+  <style>
+        /* [기본 세팅] 기본적으로 모든 페이지 영역을 화면에서 숨깁니다. */
+        .page {
+            display: none; 
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* [핵심 마법] 주소창 끝에 붙은 ID와 일치하는 page만 화면에 보여줍니다. */
+        .page:target {
+            display: block;
+        }
+
+        /* [보너스] 주소창에 아무것도 없을 때(처음 켰을 때) home은 기본으로 보여주기 */
+        #home {
+            display: block;
+        }
+        /* 만약 다른 곳이 타겟팅되면 home을 숨깁니다 */
+        :target ~ #home {
+            display: none;
+        }
+    </style>
  </head>
 <body>
   <div class="page1" id "home">
