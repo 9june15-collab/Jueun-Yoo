@@ -1,1 +1,12 @@
-
+.page{
+  display: none;
+}
+.page:target {
+            display: block;
+        }
+#home {
+            display: block;
+        }
+:target ~ #home {
+            display: none;
+        }
