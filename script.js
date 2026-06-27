@@ -1,8 +1,8 @@
 const btnHome = document.getElementById('btn-home');
 const btnWorks = document.getElementById('btn-works');
 
-const pageHome = document.getElementById('page-home');
-const pageWorks = document.getElementById('page-works');
+const pageHome = document.getElementById('home');
+const pageWorks = document.getElementById('works');
 
 btnWorks.addEventListener('click', function() {
     pageHome.classList.add('hidden');     // 홈 페이지에 hidden을 붙여서 숨김
