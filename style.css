@@ -11,7 +11,7 @@ h2{
   font-size: 48px;
 }
 .container {
-    max-width: 1200px;  /* 1. 콘텐츠가 너무 대책 없이 넓어지지 않도록 가로 한계치 설정 */
-    width: 90%;         /* 2. 화면이 1200px보다 작아지면, 양옆에 5%씩(총 10%) 여백을 남김 */
-    margin: 0 auto;     /* 3. 상하 마진은 0, 좌우 마진은 알아서 반반씩 나눠 가져서 '가운데 정렬' */
+    max-width: 1200px;  
+    width: 96%;         
+    margin: 0 auto;     
 }
