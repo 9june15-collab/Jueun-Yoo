@@ -12,6 +12,7 @@ h2{
 }
 .container {
     max-width: 1200px;  
-    width: 98%;         
-    margin: 0 auto;     
+    width: 96%;         
+    margin-left: 0;
+    margin-right: auto;
 }
