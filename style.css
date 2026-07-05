@@ -11,7 +11,8 @@
     width: 28%;         
     margin-right: 2%;   
     height: auto;       
-    object-fit: cover;  
+    object-fit: cover;
+    min-width: 160px;
 }
 
 body{
