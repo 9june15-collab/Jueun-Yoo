@@ -54,15 +54,26 @@
   </div>
   </div>
     <script>
-    const gallery = document.getElementById('gallery');
-    const items = Array.from(gallery.children);
+   const gallery = document.getElementById('gallery');
+        const items = Array.from(gallery.children);
 
-    for (let i = items.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [items[i], items[j]] = [items[j], items[i]];
-    }
+        for (let i = items.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [items[i], items[j]] = [items[j], items[i]];
+        }
 
-    items.forEach(item => gallery.appendChild(item));
+        items.forEach(item => {
+            // 최소 10px에서 최대 60px 사이의 랜덤한 숫자 계산
+            const randomGapRight = Math.floor(Math.random() * 50) + 10;
+            const randomGapBottom = Math.floor(Math.random() * 50) + 10;
+
+            // 이미지 상자(a 태그)의 오른쪽과 아래쪽 마진에 랜덤 값 주입
+            item.style.marginRight = randomGapRight + 'px';
+            item.style.marginBottom = randomGapBottom + 'px';
+
+            // 섞인 이미지를 화면에 다시 배치
+            gallery.appendChild(item);
+        });
 </script>
   
 </body>
