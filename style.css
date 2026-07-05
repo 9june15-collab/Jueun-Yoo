@@ -6,13 +6,24 @@
     padding-left: 40px;
     box-sizing: border-box;
 }
+.thumbnail-box {
+    display: flex;
+    flex-wrap: wrap;       /* 자리가 부족하면 이미지가 다음 줄로 자연스럽게 아래로 떨어짐 */
+    align-items: center; 
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.thumbnail-box a {
+    display: inline-block;
+}
 
 .thumbnail-box img {
     width: 28%;         
     margin-right: 2%;   
     height: auto;       
     object-fit: cover;
-    min-width: 280px;
+    min-width: 200px;
 }
 
 body{
