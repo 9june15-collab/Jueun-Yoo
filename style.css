@@ -8,7 +8,6 @@
 }
 .thumbnail-box {
     display: flex;
-    flex-wrap: wrap;       /* 자리가 부족하면 이미지가 다음 줄로 자연스럽게 아래로 떨어짐 */
     align-items: center; 
     width: 100%;
     max-width: 1200px;
