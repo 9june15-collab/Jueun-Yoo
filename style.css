@@ -19,7 +19,7 @@
 }
 
 .thumbnail-box img {
-    width: 28%;         
+    width: auto;         
     margin-right: 2%;   
     height: auto;       
     object-fit: cover;
