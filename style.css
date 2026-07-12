@@ -9,9 +9,7 @@
 .thumbnail-box {
     display: flex;
     flex-wrap: wrap; 
-    align-items: left; 
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
 }
 .thumbnail-box a {
