@@ -19,11 +19,21 @@
 }
 
 .thumbnail-box img {
-    width: 28%;         
-    margin-right: 2%;   
-    height: auto;       
+    width: 31%;
+    margin-right: 2%;
+    height: auto;
     object-fit: cover;
-    min-width: 280px;
+}
+.thumbnail-box img:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 768px) {
+    .thumbnail-box img {
+        width: 100%;       /* 💡 모바일에서는 쪼사지게 두지 말고, 아예 시원하게 가로 100% 꽉 채우기! */
+        margin-right: 0;   /* 옆 마진은 지워주고 */
+        margin-bottom: 20px; /* 대신 이미지와 이미지 사이의 세로 간격을 줍니다 */
+    }
 }
 
 body{
