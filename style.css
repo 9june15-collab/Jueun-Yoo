@@ -11,7 +11,7 @@
     /* 1. 데스크톱 기준 가로로 균등한 3개의 열을 만듭니다 (양끝정렬 자동 완성) */
     grid-template-columns: repeat(3, 1fr); 
     grid-auto-rows: 100px; 
-    gap: 12px; 
+    gap: 6px; 
     
     width: 100%;
     max-width: 1200px;
