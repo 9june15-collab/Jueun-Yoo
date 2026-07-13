@@ -23,7 +23,7 @@
     object-fit: cover;
 }
 .large-image{
-    width: 400px;
+    width: 560px;
     height: auto;
 }
 .thumbnail-box img:last-child {
