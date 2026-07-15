@@ -96,6 +96,7 @@ p, text content{
     align-items: flex-start;        /* 위쪽 라인 맞춤 */
     width: 100%;
     margin-top: 60px;
+   paddling-left: 20px;
     gap: 6%;                        /* 왼쪽과 오른쪽 사이의 안전 여백 */
 }
 
