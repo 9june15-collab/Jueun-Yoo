@@ -55,33 +55,6 @@
    object-fit: cover;
 }
 
-.thumbnail-box a {
- width: 100%;         /* a 태그가 31%면 31%로, 65%면 65%로 알아서 꽉 찹니다 */
-    height: auto;        /* 원본 비율 유지 (안 잘림) */
-    object-fit: contain; /* 포트폴리오 작업물이 절대 잘리지 않도록 안전하게 설정 */
-    display: block;
-}
-
-.thumbnail-box .large-image{
-    width: 560px;
-    height: auto;
-}
-@media (max-width: 768px) {
-    /* 일반 이미지들을 모바일에 맞게 조절 */
-    .thumbnail-box img {
-       flex-direction: column;   /* 모바일에서는 세로 1열로 정렬 */
-        align-items: center;
-    }
-
- .thumbnail-box a,
-    .thumbnail-box a.large-image {
-        width: 90%;               /* 모바일 디스플레이 안에서 양옆 여백 살리기 */
-        max-width: 360px;         /* 너무 거대해지지 않게 제한 */
-        margin-right: 0 !important; /* 데스크톱의 정렬 마진 제거 */
-        margin-left: 0 !important;
-        margin-bottom: 20px;
-    }
-}
 
 body{
   font-family: "DM Mono", monospace;
