@@ -89,7 +89,6 @@ p, text content{
     justify-content: space-between; /* 좌우 끝으로 밀어내기 */
     align-items: flex-start;        /* 위쪽 라인 맞춤 */
     width: 100%;
-    margin-top: 20px;
    padding-left: 20px;
 }
 
