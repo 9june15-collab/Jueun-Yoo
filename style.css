@@ -5,25 +5,15 @@
     scroll-snap-type: y mandatory; /* 💡 세로 방향으로 자석 스크롤 강제 적용 */
     scroll-behavior: smooth;      /* 화면 밖으로 나가는 이미지 잘라내기 */
 }
-.scroll-section {
-    width: 100%;
-    height: 100vh;               /* 각 화면은 정확히 화면을 가득 채웁니다 */
-    scroll-snap-align: start;    /* 💡 스크롤할 때 화면 시작점(top)에 자석처럼 턱 붙음 */
-    position: relative;
-}
+
 .overlay-header {
-    position: fixed;   
-    top: 0px;              
-    left: 20px;            
-    z-index: 100;          
-    
-    max-width: 650px;       /* 텍스트가 너무 가로로 길어지지 않게 방어막 설정 */
-    pointer-events: auto;   /* 링크나 버튼 클릭이 잘 작동하도록 설정 */
-    
-    /* 만약 글자가 GIF 배경에 묻혀서 안 보인다면, 아래처럼 살짝 투명한 배경을 깔아줄 수 있습니다 */
-    /* background-color: rgba(255, 255, 255, 0.8); 
-    padding: 30px;
-    */
+   position: fixed;         /* 스크롤을 내려도 화면 상단에 박제 */
+    top: 80px;
+    left: 40px;
+    z-index: 100;
+    max-width: 650px;
+    color: #111111;
+    mix-blend-mode: difference; /* 어둡고 밝은 배경에 맞춰 글자색 자동 반전 *
 }
 
 /* 3. 푸터 디자인 슬라이드 */
@@ -157,10 +147,10 @@ p, text content{
     padding-bottom: 2px;
 }
 html, body {
-    margin: 0;
+   margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
-    overflow-x: hidden; /* 가로 스크롤은 절대 안 생기게 차단 */
+    height: auto;    
+    overflow-y: auto;
 }
 
