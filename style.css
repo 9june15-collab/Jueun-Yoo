@@ -75,9 +75,12 @@ p, text content{
   width: 100%; 
 }
 
-.site-header{
-    padding-left: 40px;
-   
+.site-header {
+    position: relative;     /* 흐름상 다른 요소가 위로 못 덮어쓰게 선언 */
+    z-index: 999 !important; /* 💡 갤러리 이미지(일반 레이어)가 절대 헤더 위로 기어 올라오지 못하게 차단 */
+    
+    width: 100%;
+    padding: 40px 0;
 }
 /* 상세페이지 */
 .project-detail-wrapper {
@@ -144,7 +147,7 @@ p, text content{
     border-bottom: 1px solid #111;
     padding-bottom: 2px;
 }
-html, body {
+.html, body {
    margin: 0;
     padding: 0;
     width: 100%;
