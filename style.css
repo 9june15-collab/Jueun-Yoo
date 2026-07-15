@@ -114,7 +114,6 @@ p, text content{
 .project-media img {
     width: 100%;                    /* 오른쪽 칸 너비에 꽉 맞춤 */
     height: auto;                   /* 원본 비율 보존 */
-    margin-bottom: 40px;            /* 이미지와 이미지 사이의 여백 */
     display: block;
 }
 
