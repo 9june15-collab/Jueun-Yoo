@@ -96,7 +96,7 @@ p, text content{
 
 /* 왼쪽 칸(설명) */
 .project-info {
-    width: 50%;                     /* 왼쪽 칸이 차지할 너비 */
+    width: 40%;                     /* 왼쪽 칸이 차지할 너비 */
     
     position: sticky;
     top: 60px;                      /* 화면 상단에서 60px 떨어진 채 고정 */
