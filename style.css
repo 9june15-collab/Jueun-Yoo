@@ -41,12 +41,12 @@
 
 
 .thumbnail-box {
-   display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between; /* 양끝정렬 활성화 */
-    align-items: flex-start;        /*  이미지들이 위쪽 라인 기준으로 정렬되어 간격 버그 최소화 */
+  position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    margin: 0 auto;
+    height: 100%;
+    z-index: 1;             /* 헤더(10)보다 아래에 깔리도록 설정 */
 }
 
 .thumbnail-box img {
