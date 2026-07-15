@@ -6,75 +6,74 @@
   <title>Jueun Yoo</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
-
- </head>
+</head>
 <body>
-   <header class="site-header">
-                <h2>jueun yoo</h2>
- 
-                  
-                    <p>
-  &#8595; click each object to see the detail
-                    </p>
-                
-            </header>
+
+  <header class="site-header">
+    <h2>jueun yoo</h2>
+    <p>&#8595; click each object to see the detail</p>
+  </header>
+
   <div class="container">
-  <div class="page" id "home">
-           
-    <main>
-    <div class="thumbnail-box" id="gallery">
-      <a href="everywhere hanger.html">
-     <img src="everywhere hanger.png" >
-      </a>
-      <a href="mackerel zine.html">
-        <img src="mackerel_zine.png" >
-      </a>
-      <a href="Mindthegap.html">
-      <img src="Mindthegap.JPG" >
-      </a>
-      <a href="ANNND.html" class="large-image">
-      <img src="ANNND.jpg">
-      </a>
-      <a href="f-impromptu.html" class="long-image">
-      <img src="f-impromptu.jpg" >
-      </a>
-      <a href="WOW.html" class="large-image">
-      <img src="WOW.png" >
-      </a>
-      <a href="figma.html">
-      <img src="figma.png" >
-      </a>
+    <div class="page" id="home">
+      <main>
+        <div class="thumbnail-box" id="gallery">
+          <a href="everywhere hanger.html">
+            <img src="everywhere hanger.png" alt="Everywhere Hanger">
+          </a>
+          <a href="mackerel zine.html">
+            <img src="mackerel_zine.png" alt="Mackerel Zine">
+          </a>
+          <a href="Mindthegap.html">
+            <img src="Mindthegap.JPG" alt="Mind the Gap">
+          </a>
+          <a href="ANNND.html" class="large-image">
+            <img src="ANNND.jpg" alt="ANNND">
+          </a>
+          <a href="f-impromptu.html" class="long-image">
+            <img src="f-impromptu.jpg" alt="Fair Isle Impromptu">
+          </a>
+          <a href="WOW.html" class="large-image">
+            <img src="WOW.png" alt="WOW">
+          </a>
+          <a href="figma.html">
+            <img src="figma.png" alt="Figma Project">
+          </a>
+        </div>
+      </main>
     </div>
-    </main>
   </div>
-  </div>
-    <script>
-   const gallery = document.getElementById('gallery');
-        const items = Array.from(gallery.children);
 
-        for (let i = items.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [items[i], items[j]] = [items[j], items[i]];
-        }
+  <script>
+    const gallery = document.getElementById('gallery');
+    
+    // 💡 변경 포인트: gallery.children 대신 명확하게 '안에 있는 a 태그들만' 선택합니다.
+    const items = Array.from(gallery.querySelectorAll('#gallery > a'));
 
-        items.forEach(item => {
-            // 최소 10px에서 최대 60px 사이의 랜덤한 숫자 계산
-            const randomGapRight = Math.floor(Math.random() * 50) + 10;
-            const randomGapBottom = Math.floor(Math.random() * 50) + 10;
+    // 피셔-예이츠 셔플 알고리즘
+    for (let i = items.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [items[i], items[j]] = [items[j], items[i]];
+    }
 
-            // 이미지 상자(a 태그)의 오른쪽과 아래쪽 마진에 랜덤 값 주입
-            item.style.marginRight = randomGapRight + 'px';
-            item.style.marginBottom = randomGapBottom + 'px';
+    // 섞인 순서대로 스타일을 부여하고 갤러리에 다시 부착
+    items.forEach(item => {
+        // 최소 10px에서 최대 60px 사이의 랜덤한 숫자 계산
+        const randomGapRight = Math.floor(Math.random() * 50) + 10;
+        const randomGapBottom = Math.floor(Math.random() * 50) + 10;
 
-            // 섞인 이미지를 화면에 다시 배치
-            gallery.appendChild(item);
-        });
-</script>
+        // 이미지 상자(a 태그)의 오른쪽과 아래쪽 마진에 랜덤 값 주입
+        item.style.marginRight = randomGapRight + 'px';
+        item.style.marginBottom = randomGapBottom + 'px';
+
+        // 섞인 이미지들을 gallery 내부에 순서대로 다시 집어넣습니다.
+        gallery.appendChild(item);
+    });
+  </script>
   
 </body>
-
 </html>
