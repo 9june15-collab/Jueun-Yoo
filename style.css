@@ -8,11 +8,10 @@
 
 .overlay-header {
    position: fixed;         /* 스크롤을 내려도 화면 상단에 박제 */
-    top: 80px;
-    left: 40px;
+    top: 0px;
+    left: 20px;
     z-index: 100;
     max-width: 650px;
-    mix-blend-mode: difference; /* 어둡고 밝은 배경에 맞춰 글자색 자동 반전 *
 }
 
 /* 3. 푸터 디자인 슬라이드 */
