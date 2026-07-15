@@ -1,7 +1,7 @@
 .container {
    width: 100vw;
     height: 100vh;
-   left-padding:20px;
+   padding-left:20px;
     overflow-y: scroll;          /* 세로 스크롤 활성화 */
     scroll-snap-type: y mandatory; /* 💡 세로 방향으로 자석 스크롤 강제 적용 */
     scroll-behavior: smooth;      /* 화면 밖으로 나가는 이미지 잘라내기 */
@@ -89,8 +89,8 @@ p, text content{
     justify-content: space-between; /* 좌우 끝으로 밀어내기 */
     align-items: flex-start;        /* 위쪽 라인 맞춤 */
     width: 100%;
-    margin-top: 60px;
-   paddling-left: 20px;
+    margin-top: 20px;
+   padding-left: 20px;
     gap: 6%;                        /* 왼쪽과 오른쪽 사이의 안전 여백 */
 }
 
@@ -98,7 +98,6 @@ p, text content{
 .project-info {
     width: 50%;                     /* 왼쪽 칸이 차지할 너비 */
     
-    /* 💡 [디자이너 추천 수식] 스크롤을 내려도 왼쪽 글 상자는 화면에 고정됩니다 */
     position: sticky;
     top: 60px;                      /* 화면 상단에서 60px 떨어진 채 고정 */
     
