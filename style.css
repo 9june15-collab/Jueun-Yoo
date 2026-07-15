@@ -96,7 +96,7 @@ p, text content{
 
 /* 왼쪽 칸(설명) */
 .project-info {
-    width: 34%;                     /* 왼쪽 칸이 차지할 너비 */
+    width: 50%;                     /* 왼쪽 칸이 차지할 너비 */
     
     /* 💡 [디자이너 추천 수식] 스크롤을 내려도 왼쪽 글 상자는 화면에 고정됩니다 */
     position: sticky;
