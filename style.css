@@ -39,20 +39,7 @@
     max-width: 650px;            /* 기존 본문 폭 유지 */
 }
 
-.overlay-header {
-    position: absolute;     
-    top: 40px;              
-    left: 10px;             /* 좌측 여백 (.container의 padding-left: 40px 무드 유지) */
-    z-index: 10;            /* 💡 GIF 이미지보다 무조건 위에 배치되도록 우선순위 부여 */
-    
-    max-width: 650px;       
-    pointer-events: auto;   
-    
-    /* 만약 글자가 GIF 배경에 묻혀서 안 보인다면, 아래처럼 살짝 투명한 배경을 깔아줄 수 있습니다 */
-    /* background-color: rgba(255, 255, 255, 0.8); 
-    padding: 30px;
-    */
-}
+
 .thumbnail-box {
    display: flex;
     flex-wrap: wrap; 
