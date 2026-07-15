@@ -12,7 +12,7 @@
     position: relative;
 }
 .overlay-header {
-    position: absolute;   
+    position: fixed;   
     top: 20px;              
     left: 20px;            
     z-index: 10;            /* 💡 GIF 이미지보다 무조건 위에 배치되도록 우선순위 부여 */
