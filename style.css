@@ -67,6 +67,7 @@ p, text content{
     z-index: 999 !important; /* 💡 갤러리 이미지(일반 레이어)가 절대 헤더 위로 기어 올라오지 못하게 차단 */
     
     width: 100%;
+   background-color: transparent;
     left-paddling: 20px;
 }
 /* 상세페이지 */
