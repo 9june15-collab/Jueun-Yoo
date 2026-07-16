@@ -27,6 +27,16 @@
     z-index: 1;        
 }
 
+.site-header, .overlay-header {
+    /* ... 기존 코드들 ... */
+
+    /* 💡 [핵심] 뒤에 깔린 이미지와 글자색을 대비시켜 반전 효과를 줍니다 */
+    mix-blend-mode: difference !important;
+
+    /* 💡 글자색이 기본적으로 '흰색' 혹은 '밝은 회색' 계열이어야 반전이 극대화됩니다 */
+    color: #ffffff !important; 
+}
+
 .thumbnail-box img {
    width: 100%;
    height: 100%
