@@ -6,6 +6,9 @@
     scroll-snap-type: y mandatory; /* 💡 세로 방향으로 자석 스크롤 강제 적용 */
     scroll-behavior: smooth;      /* 화면 밖으로 나가는 이미지 잘라내기 */
 }
+.container_archive {
+   
+}
 
 .overlay-header {
    position: fixed;         /* 스크롤을 내려도 화면 상단에 박제 */
@@ -13,23 +16,6 @@
     left: 20px;
     z-index: 100;
     max-width: 650px;
-}
-
-/* 3. 푸터 디자인 슬라이드 */
-.footer-slide {
-    
-    display: flex;
-    align-items: center;         /* 이력 글자들을 세로 가운데 정렬 */
-    justify-content: flex-start;
-    padding-left: 20px;          /* 기존 여백 감성 유지 */
-}
-
-.footer-content {
-    max-width: 650px;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    text-align: left;
 }
 
 .thumbnail-box {
