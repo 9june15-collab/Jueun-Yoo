@@ -197,7 +197,7 @@ p, text content{
 }
 .archive-thumbnail{
    column-count: 5;           /* 💻 PC 기준 기본 3열 설정 (2열을 원하시면 2로 변경 가능) */
-    column-gap: 20px;          /* 열과 열 사이의 가로 간격 */
+    column-gap: 10px;          /* 열과 열 사이의 가로 간격 */
     
     width: 100%;
     max-width: 1200px;         /* 화면이 너무 커지는 것을 방지 */
@@ -206,7 +206,7 @@ p, text content{
 .archive-thumbnail a {
     display: inline-block;     /* 💡 컬럼 내부에서 이미지가 잘려서 다음 컬럼으로 넘어가는 버그 방지 */
     width: 100%;               /* 부모 컬럼 너비에 100% 맞춤 */
-    margin-bottom: 20px;       /* 이미지 아래쪽 간격 (세로 갭) */
+    margin-bottom: 10px;       /* 이미지 아래쪽 간격 (세로 갭) */
 }
 
 /* 3. 💡 [가장 중요] 이미지 비율 자동 조정 설정 */
