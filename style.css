@@ -203,6 +203,7 @@ p, text content{
     
     width: 100%;    
     margin: 0 auto;
+   max-width: 1200px;
 }
 .archive-thumbnail a {
     display: inline-block;     /* 💡 컬럼 내부에서 이미지가 잘려서 다음 컬럼으로 넘어가는 버그 방지 */
