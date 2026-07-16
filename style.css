@@ -64,12 +64,11 @@ p, text content{
 }
 
 .site-header {
-    position: relative;     /* 흐름상 다른 요소가 위로 못 덮어쓰게 선언 */
-    z-index: 999 !important; /* 💡 갤러리 이미지(일반 레이어)가 절대 헤더 위로 기어 올라오지 못하게 차단 */
-    
-    width: 100%;
-   background-color: transparent;
-    left-paddling: 20px;
+    position: fixed;         /* 스크롤을 내려도 화면 상단에 박제 */
+    top: 0px;
+    left: 20px;
+    z-index: 100;
+    max-width: 650px;
 }
 /* 상세페이지 */
 .project-detail-wrapper {
