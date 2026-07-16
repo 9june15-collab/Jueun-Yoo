@@ -203,3 +203,18 @@ p, text content{
     max-width: 1200px;         /* 화면이 너무 커지는 것을 방지 */
     margin: 0 auto;
 }
+.archive-thumbnail a {
+    display: inline-block;     /* 💡 컬럼 내부에서 이미지가 잘려서 다음 컬럼으로 넘어가는 버그 방지 */
+    width: 100%;               /* 부모 컬럼 너비에 100% 맞춤 */
+    margin-bottom: 20px;       /* 이미지 아래쪽 간격 (세로 갭) */
+}
+
+/* 3. 💡 [가장 중요] 이미지 비율 자동 조정 설정 */
+.archive-thumbnail img {
+    width: 100% !important;     /* 컬럼 가로폭에 꽉 맞추고 */
+    height: auto !important;    /* 💡 가로폭 비율에 맞춰 세로 높이를 자동 조절 (찌그러짐 방지) */
+    display: block;            
+    
+    /* 혹시 디테일 완성도를 높이고 싶다면 부드러운 라운딩 추가 */
+    border-radius: 4px;        
+}
