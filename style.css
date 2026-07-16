@@ -155,3 +155,58 @@ p, text content{
     overflow-y: auto;
 }
 
+/* 모바일 규격 */
+@media (max-width: 600px) {
+    /* 1. 전체 좌우 여백 조정 (모바일은 좌우 20px 정도로 좁혀야 시원해 보입니다) */
+    body {
+        padding: 0 20px !important;
+    }
+
+    /* 2. 고정된 헤더 스타일 모바일 최적화 */
+    .site-header, .overlay-header {
+        position: relative !important; /* 💡 모바일에서는 글이 길면 이미지를 너무 많이 가리므로 고정을 풀고 위로 보냅니다 */
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 30px 0 10px 0 !important;
+    }
+
+    .site-header h2, .overlay-header h2 {
+        font-size: 20px !important; /* 모바일에 맞게 타이틀 크기 축소 */
+    }
+
+    .site-header p, .overlay-header p {
+        font-size: 13px !important;
+        margin-top: 8px !important;
+    }
+
+    /* 3. 갤러리 영역 위쪽 여백 조정 */
+    .container {
+        padding-top: 10px !important; /* 헤더 고정을 풀었으므로 위쪽 여백을 대폭 줄입니다 */
+    }
+
+    /* 4. 💡 [핵심] 썸네일 박스 모바일 정렬 */
+    .thumbnail-box {
+        display: flex !important;
+        flex-direction: column !important; /* 💡 가로 나열 대신 위에서 아래로 1열 세로 정렬 */
+        align-items: center !important;
+        gap: 30px !important; /* 썸네일 사이의 세로 간격을 일정하게 부여 */
+        width: 100% !important;
+    }
+
+    /* 5. 💡 [핵심] 썸네일 이미지 크기 강제 조정 */
+    .thumbnail-box a {
+        width: 100% !important;      /* 모바일 화면 가로폭에 꽉 차게 설정 */
+        max-width: 335px !important;  /* 375px 화면에서 좌우 여백을 제외한 최대 너비 */
+        margin-right: 0 !important;   /* 자바스크립트가 준 랜덤 가로 마진 무효화 */
+        margin-bottom: 0 !important;  /* 자바스크립트가 준 랜덤 세로 마진 무효화 (gap으로 제어) */
+    }
+
+    .thumbnail-box img {
+        width: 100% !important;
+        height: auto !important;      /* 이미지 비율 유지하며 꽉 채우기 */
+        object-fit: cover !important;
+    }
+}
+
