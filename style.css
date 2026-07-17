@@ -83,7 +83,7 @@ p, text content{
 
 /* 왼쪽 칸(설명) */
 .project-info {
-    width: 40%;                     /* 왼쪽 칸이 차지할 너비 */
+    width: 30%;                     /* 왼쪽 칸이 차지할 너비 */
     
     position: sticky;
     top: 10px;
@@ -94,7 +94,7 @@ p, text content{
 
 /* 오른쪽 칸(이미지) */
 .project-media {
-    width: 60%;                     /* 오른쪽 칸이 차지할 너비 (34% + 6% + 60% = 100%) */
+    width: 70%;                     /* 오른쪽 칸이 차지할 너비 (34% + 6% + 60% = 100%) */
 }
 
 /* 오른쪽 칸 안의 이미지들 대열 정렬 */
