@@ -34,6 +34,9 @@
           <a href="ANNND.html" class="large-image">
             <img src="images/ANNND.jpg" alt="ANNND">
           </a>
+          <a href="cupping.html">
+            <img src="images/cupping.png">
+          </a>
           <a href="f-impromptu.html" class="long-image">
             <img src="images/f-impromptu.jpg" alt="Fair Isle Impromptu">
           </a>
@@ -43,41 +46,12 @@
           <a href="figma.html">
             <img src="images/figma.png" alt="Figma Project">
           </a>
-           <a href="cupping.html">
-            <img src="images/cupping.png">
-          </a>
+           
         </div>
       </main>
     </div>
   </div>
 </div>
 
-  <script>
-    const gallery = document.getElementById('gallery');
-    
-    // 💡 변경 포인트: gallery.children 대신 명확하게 '안에 있는 a 태그들만' 선택합니다.
-    const items = Array.from(gallery.querySelectorAll('#gallery > a'));
-
-    // 피셔-예이츠 셔플 알고리즘
-    for (let i = items.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [items[i], items[j]] = [items[j], items[i]];
-    }
-
-    // 섞인 순서대로 스타일을 부여하고 갤러리에 다시 부착
-    items.forEach(item => {
-        // 최소 10px에서 최대 60px 사이의 랜덤한 숫자 계산
-        const randomGapRight = Math.floor(Math.random() * 50) + 10;
-        const randomGapBottom = Math.floor(Math.random() * 50) + 10;
-
-        // 이미지 상자(a 태그)의 오른쪽과 아래쪽 마진에 랜덤 값 주입
-        item.style.marginRight = randomGapRight + 'px';
-        item.style.marginBottom = randomGapBottom + 'px';
-
-        // 섞인 이미지들을 gallery 내부에 순서대로 다시 집어넣습니다.
-        gallery.appendChild(item);
-    });
-  </script>
-  
 </body>
 </html>
