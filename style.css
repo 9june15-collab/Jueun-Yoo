@@ -29,8 +29,10 @@
 }
 
 
-.thumbnail-box img {
-   width: 60%; 
+.thumbnail-box img {¥
+    grid-column: 4/span 3; 
+    grid-row: 1;
+   width: 100%; 
    height: auto;
    object-fit: cover;
 }
