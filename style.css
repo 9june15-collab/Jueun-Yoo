@@ -73,6 +73,9 @@ p, text content{
 }
 
 .site-header {
+
+   width: 100%; /* 기본적으로 속한 컬럼 너비를 채움 */
+    margin-bottom: 3rem;
     position: fixed;         /* 스크롤을 내려도 화면 상단에 박제 */
     top: 0px;
     left: 20px;
