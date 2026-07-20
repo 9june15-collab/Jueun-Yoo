@@ -70,6 +70,16 @@ p, text content{
     z-index: 100;
     max-width: 650px;
 }
+
+.bottom-text {
+    position: absolute;
+    bottom: 20px;       /* 💡 바닥에서 40px만큼 띄우기 (원하는 만큼 조절) */
+    left: 50%;
+    /* transform: translateX(-50%); /* 💡 텍스트를 가로 가운데 정렬 */ */
+    margin: 0;
+   
+}
+
 /* 상세페이지 */
 .project-detail-wrapper {
     display: flex;
