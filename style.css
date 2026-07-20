@@ -9,14 +9,13 @@
 }
 
 .overlay-header {
-   position: fixed;         /* 스크롤을 내려도 화면 상단에 박제 */
-    top: 0px;
-    left: 20px;
-    z-index: 100;
-    max-width: 650px;
+   grid-column: 2/span 3; 
+    grid-row: 1;
 }
 
 .header-links{
+ grid-column: 4/; 
+    grid-row: 1;
    
 }
 
@@ -67,13 +66,9 @@ p, text content{
 
 .site-header {
 
-   width: 100%; /* 기본적으로 속한 컬럼 너비를 채움 */
-    margin-bottom: 3rem;
-    position: fixed;         /* 스크롤을 내려도 화면 상단에 박제 */
-    top: 0px;
-    left: 20px;
-    z-index: 100;
-    max-width: 650px;
+   grid-column: 2/span 3; 
+    grid-row: 1;
+ 
 }
 
 .bottom-text {
