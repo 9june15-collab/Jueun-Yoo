@@ -1,17 +1,8 @@
 .container {
- column-count: 6;           /* 💻 PC 기준 기본 3열 설정 (2열을 원하시면 2로 변경 가능) */
-    column-gap: 10px;          /* 열과 열 사이의 가로 간격 */
-    
-    width: 100%;    
-    margin: 0 auto;
-   max-width: 1200px;
-   
-   width: 100vw;
-    height: 100vh;
-   padding-left:20px;
-    overflow-y: scroll;          /* 세로 스크롤 활성화 */
-    scroll-snap-type: y mandatory; /* 💡 세로 방향으로 자석 스크롤 강제 적용 */
-    scroll-behavior: smooth;      /* 화면 밖으로 나가는 이미지 잘라내기 */
+ display: grid;
+    /* 3열(Column) 구조 만들기 (원하는 컬럼 수만큼 fr 조절) */
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 10px;
 }
 .container_archive {
    
@@ -26,12 +17,7 @@
 }
 
 .header-links{
-     column-count: 6;           /* 💻 PC 기준 기본 3열 설정 (2열을 원하시면 2로 변경 가능) */
-    column-gap: 10px;          /* 열과 열 사이의 가로 간격 */
-    
-    width: 100%;    
-    margin: 0 auto;
-   max-width: 1200px;
+   
 }
 
 .thumbnail-box {
