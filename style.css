@@ -6,7 +6,12 @@
  padding: 10px 10px;
  align-items: start;
 }
-.container_archive {
+.container_archive {max-width: 1200px;  
+    width: 100%;         
+    margin-left: 0;
+    margin-right: auto;
+    padding-left: 40px;
+    box-sizing: border-box;
    
 }
 
