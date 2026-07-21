@@ -159,7 +159,7 @@ p, text content{
 @media (max-width: 600px) {
     /* 1. 전체 좌우 여백 조정 (모바일은 좌우 20px 정도로 좁혀야 시원해 보입니다) */
     body {
-        padding: 0 20px !important;
+        padding: 0 10px !important;
     }
 
     /* 2. 고정된 헤더 스타일 모바일 최적화 */
@@ -169,7 +169,7 @@ p, text content{
         left: 0 !important;
         width: 100% !important;
         max-width: 100% !important;
-        padding: 30px 0 10px 0 !important;
+        padding: 10px 0 10px 0 !important;
     }
 
     .site-header h2, .overlay-header h2 {
@@ -177,7 +177,7 @@ p, text content{
     }
 
     .site-header p, .overlay-header p {
-        font-size: 13px !important;
+        font-size: 16px !important;
         margin-top: 8px !important;
     }
 
