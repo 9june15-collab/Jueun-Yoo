@@ -20,7 +20,7 @@
 }
 
 .overlay-header {
- width: 50%;
+ width: 650px;
    grid-column: 1/span 3; 
     grid-row: 1;
 }
