@@ -38,7 +38,7 @@
    
     top: 10%;
     right: 5%;
-    width: 60%;          /* 그리드 열 칸과 상관없이 원하는 크기 지정 */
+    width: 80%;          /* 그리드 열 칸과 상관없이 원하는 크기 지정 */
     height: auto;
     pointer-events: none; 
 }
