@@ -20,14 +20,14 @@
 }
 
 .overlay-header {
- width: 650px;
+ width: 600px;
    grid-column: 1/span 3; 
     grid-row: 0;
 }
 
 .header-links{
  grid-column: 4; 
-    grid-row: 1;
+    grid-row: 0;
    
 }
 
@@ -87,14 +87,6 @@ p, text content{
  
 }
 
-.bottom-text {
-    position: absolute;
-    bottom: 20px;       /* 💡 바닥에서 40px만큼 띄우기 (원하는 만큼 조절) */
-    left: 50%;
-    /* transform: translateX(-50%); /* 💡 텍스트를 가로 가운데 정렬 */ */
-    margin: 0;
-   
-}
 
 /* 상세페이지 */
 .project-detail-wrapper {
