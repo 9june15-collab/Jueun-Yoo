@@ -3,10 +3,16 @@
     /* 3열(Column) 구조 만들기 (원하는 컬럼 수만큼 fr 조절) */
     grid-template-columns: repeat(6, 1fr); 
     gap: 10px;
+ padding: 10px 10px;
  align-items: start;
 }
 .container_archive {
    
+}
+
+.header_preface{
+ grid-column: 2/span 3; 
+    grid-row: 1;
 }
 
 .overlay-header {
