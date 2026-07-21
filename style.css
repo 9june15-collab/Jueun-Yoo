@@ -16,9 +16,15 @@
 }
 
 .header_preface{
- grid-column: 2;
- grid-column: span 3;
-    grid-row: 1;
+ position: absolute;  /*  그리드 흐름(Flow)에서 완전히 제외시킵니다 */
+    z-index: -1;      
+    
+   
+    top: 10%;
+    right: 5%;
+    width: 60%;          /* 그리드 열 칸과 상관없이 원하는 크기 지정 */
+    height: auto;
+    pointer-events: none;
 }
 
 .overlay-header {
