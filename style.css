@@ -22,7 +22,7 @@
 .overlay-header {
  width: 650px;
    grid-column: 1/span 3; 
-    grid-row: 1;
+    grid-row: 0;
 }
 
 .header-links{
