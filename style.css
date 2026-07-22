@@ -26,7 +26,7 @@
 .overlay-header {
  width: 600px;
 
-    align-self: start;
+    align-self: center;
    text-align: center;
  z-index: 100;
 }
