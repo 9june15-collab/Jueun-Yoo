@@ -5,6 +5,7 @@
     gap: 10px;
  padding: 20px 20px;
  align-items: start;
+ background-color: FFFDF7;
 }
 .container_archive {max-width: 1200px;  
     width: 100%;         
@@ -12,6 +13,7 @@
     margin-right: auto;
     padding-left: 40px;
     box-sizing: border-box;
+    background-color: FFFDF7;
    
 }
 
