@@ -21,8 +21,12 @@
  width: 800px;
  min-width: 300px;
  text-align: center;
- 
 }
+ .bottom-text{
+   width: 800px;
+ min-width: 300px;
+ text-align: center;
+ }
 .title{
  padding-left: 20px;
  paddling-top: 20px;
