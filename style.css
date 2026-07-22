@@ -4,6 +4,10 @@
     margin-right: auto;
     padding-left: 40px;
     box-sizing: border-box;
+  width: 80%;
+ min-width: 300px
+   text-align: center;
+ z-index: 100;
     background-color: FFFDF7;
 }
 .container_archive {max-width: 1200px;  
@@ -18,16 +22,6 @@
 .title{
  padding-left: 20px;
  paddling-top: 20px;
-}
-.header_preface{
-
-}
-
-.overlay-header {
- width: 80%;
- min-width: 300px
-   text-align: center;
- z-index: 100;
 }
 
 .header-link{
