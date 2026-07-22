@@ -88,11 +88,6 @@ h2{
 font-size: 20px;
 }
 
-p, text content{
-  max-width: 600px;
-  width: 100%; 
-}
-
 .site-header {
 
    grid-column: 2/span 3; 
