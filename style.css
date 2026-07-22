@@ -23,6 +23,7 @@
  width: 600px;
    grid-column: 1/span 3; 
     grid-row: 0;
+ z-index: 100;
 }
 
 .header-links{
