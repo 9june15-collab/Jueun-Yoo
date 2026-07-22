@@ -1,6 +1,6 @@
 .container {
  width: 100%;         
-    margin-left: 0;
+    margin-left: auto;
     margin-right: auto;
     padding-left: 40px;
     box-sizing: border-box;
@@ -26,8 +26,6 @@
 .overlay-header {
  width: 80%;
  min-width: 300px
-margin-left: auto;
-    margin-right: auto;
    text-align: center;
  z-index: 100;
 }
