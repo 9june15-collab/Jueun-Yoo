@@ -36,6 +36,7 @@
 
     /* 4. 글자 상자 높이가 전체로 늘어나지 않도록 자기 크기에 맞춤 */
     align-self: start;
+   text-align: center;
  z-index: 100;
 }
 
