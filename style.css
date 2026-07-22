@@ -20,6 +20,7 @@
  max-width: 100%;
  min-width: 300px;
  text-align: center;
+ word-break: keep-all;
 }
  .bottom-text{
    width: 800px;
