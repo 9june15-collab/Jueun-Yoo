@@ -18,11 +18,13 @@
    
 }
 .header_text{
-  margin-left: auto;
-    margin-right: auto;
  width: 1000px;
  max-width: 100%;
  min-width: 300px;
+
+      margin-left: auto;
+    margin-right: auto;
+
  text-align: center;
  word-break: keep-all;
 }
