@@ -18,6 +18,11 @@
     background-color: FFFDF7;
    
 }
+.header_text{
+ max-width: 800px;
+ text-align: center;
+ 
+}
 .title{
  padding-left: 20px;
  paddling-top: 20px;
