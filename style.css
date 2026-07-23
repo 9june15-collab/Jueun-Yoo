@@ -103,66 +103,91 @@ font-size: 20px;
 .split-layout {
     display: flex;
     width: 100%;
-    padding-top: 20px;
-    padding-left: 20px;
     min-height: 100vh;
+    background-color: #FFFDF7;
     position: relative;
-    box-sizing: border-box;
 }
 
-/* [왼쪽] 아카이브 목록 구역 */
+/* [왼쪽] 아카이브 섹션 */
 .archive-section {
-    flex: 1; /* 오른쪽 패널이 열리면 폭이 유동적으로 조절됨 */
+    flex: 1;
     padding: 40px;
     transition: all 0.4s ease;
 }
 
-/* 기존 사용하시던 아카이브 그리드 스타일 유지 */
 .archive-thumbnail {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-/* [오른쪽] 상세 설명 패널 (기본 숨김) */
+/* [오른쪽] 상세 패널 (기본 숨김) */
 .detail-panel {
-    width: 0; /* 초기 폭 0 */
+    width: 0;
     opacity: 0;
     overflow-y: auto;
-    background-color: #FFFDF7; /* 전체 배경색과 맞춤 */
-    border-left: 1px solid #eee; /* 영역 구분을 위한 얇은 선 */
-    padding: 0;
-    transition: all 0.4s ease;
+    height: 100vh;
     position: sticky;
     top: 0;
-    height: 100vh; /* 화면 스크롤 시 고정 */
+    border-left: 0px solid #eee;
+    transition: width 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+    box-sizing: border-box;
 }
 
-/* 💡 오른쪽 패널이 활성화(열림)되었을 때 스타일 */
-.detail-panel.is-active {
-    width: 45%; /* 화면의 45% 차지 (필요시 조절) */
+/* 모든 상세 아이템은 기본적으로 안 보이게 설정 */
+.detail-item {
+    display: none;
+}
+
+/* --------------------------------------------------
+   💡 [핵심 해결버그 수정] Pure CSS 타겟팅 선택자
+-------------------------------------------------- */
+
+/* 1. 어떤 detail-item이든 :target 상태가 되면 패널을 열어줍니다 */
+.detail-panel:has(.detail-item:target) {
+    width: 45%;               /* 패널 너비 */
     opacity: 1;
-    padding: 40px;
+    padding: 60px 40px 40px 40px; /* 상단 닫기버튼 여백 확보 */
+    border-left: 1px solid #eee;
+}
+
+/* 2. 현재 선택된(#) id를 가진 아이템만 정확히 보여줍니다 */
+.detail-item:target {
+    display: block !important; /* 우선순위 강제 적용으로 밑에 있는 항목들도 무조건 노출 */
 }
 
 /* 닫기 버튼 */
 .close-btn {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    float: right;
-    color: inherit;
-    mix-blend-mode: difference;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    text-decoration: none;
+    color: #000;
+    line-height: 1;
+    z-index: 10;
 }
 
-/* 상세 컨텐츠 내부 스타일 */
+/* 폰트 및 이미지 레이아웃 */
+.detail-item h2 {
+    font-family: 'Coral Pixels', sans-serif;
+    margin-bottom: 20px;
+}
+
+.detail-item p {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    white-space: pre-line; /* HTML 행바꿈 자연스럽게 반영 */
+}
 
 .detail-media img,
 .detail-media video {
     width: 100%;
     height: auto;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
+    display: block;
 }
 
 /* 모바일 규격 */
