@@ -157,17 +157,6 @@ font-size: 20px;
 }
 
 /* 상세 컨텐츠 내부 스타일 */
-.detail-content h2 {
-    font-family: 'Coral Pixels', sans-serif;
-    margin-bottom: 16px;
-}
-
-.detail-content p {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin-bottom: 24px;
-}
 
 .detail-media img,
 .detail-media video {
