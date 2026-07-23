@@ -113,11 +113,6 @@ font-size: 20px;
 /* 왼쪽 칸(설명) */
 .project-info {
     width: 30%;                     /* 왼쪽 칸이 차지할 너비 */
-    
-    position: sticky;
-    top: 10px;
-    padding-right:10px;
-    
     height: auto;
 }
 
