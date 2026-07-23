@@ -165,6 +165,81 @@ font-size: 20px;
     height: auto;    
     overflow-y: auto;
 }
+/* 2차 수정본(상세페이지)*/
+/* 전체 2-Column 분할 레이아웃 */
+.split-layout {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* [왼쪽] 아카이브 목록 구역 */
+.archive-section {
+    flex: 1; /* 오른쪽 패널이 열리면 폭이 유동적으로 조절됨 */
+    padding: 40px;
+    transition: all 0.4s ease;
+}
+
+/* 기존 사용하시던 아카이브 그리드 스타일 유지 */
+.archive-thumbnail {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* [오른쪽] 상세 설명 패널 (기본 숨김) */
+.detail-panel {
+    width: 0; /* 초기 폭 0 */
+    opacity: 0;
+    overflow-y: auto;
+    background-color: #FFFDF7; /* 전체 배경색과 맞춤 */
+    border-left: 1px solid #eee; /* 영역 구분을 위한 얇은 선 */
+    padding: 0;
+    transition: all 0.4s ease;
+    position: sticky;
+    top: 0;
+    height: 100vh; /* 화면 스크롤 시 고정 */
+}
+
+/* 💡 오른쪽 패널이 활성화(열림)되었을 때 스타일 */
+.detail-panel.is-active {
+    width: 45%; /* 화면의 45% 차지 (필요시 조절) */
+    opacity: 1;
+    padding: 40px;
+}
+
+/* 닫기 버튼 */
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    float: right;
+    color: inherit;
+    mix-blend-mode: difference;
+}
+
+/* 상세 컨텐츠 내부 스타일 */
+.detail-content h2 {
+    font-family: 'Coral Pixels', sans-serif;
+    margin-bottom: 16px;
+}
+
+.detail-content p {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.detail-media img,
+.detail-media video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+}
 
 /* 모바일 규격 */
 @media (max-width: 600px) {
