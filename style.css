@@ -214,7 +214,6 @@ font-size: 20px;
     margin-bottom: 16px;
     display: block;
 }
-
 /* 모바일 규격 */
 @media (max-width: 600px) {
     /* 1. 전체 좌우 여백 조정 (모바일은 좌우 20px 정도로 좁혀야 시원해 보입니다) */
