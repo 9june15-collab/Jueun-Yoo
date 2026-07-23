@@ -100,93 +100,118 @@ font-size: 20px;
 
 /* 2차 수정본(상세페이지)*/
 /* 전체 2-Column 분할 레이아웃 */
+.finder-nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 16px 40px;
+    background-color: #FFFDF7;
+    border-bottom: 1px solid #000;
+    font-size: 0.9rem;
+    z-index: 100;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.finder-nav .separator {
+    opacity: 0.4;
+}
+
+.finder-nav .path-current {
+    font-weight: 500;
+}
+
+/* 2. 분할 레이아웃 */
 .split-layout {
     display: flex;
     width: 100%;
-    min-height: 100vh;
-    background-color: #FFFDF7;
+    min-height: calc(100vh - 53px); /* 헤더 높이 제외 */
     position: relative;
 }
 
-/* [왼쪽] 아카이브 섹션 */
+/* [왼쪽] 아카이브 목록 */
 .archive-section {
-    flex: 1;
+    width: 55%;
     padding: 40px;
-    transition: all 0.4s ease;
+    border-right: 1px solid #eee;
 }
 
-.archive-thumbnail {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+.archive-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-/* [오른쪽] 상세 패널 (기본 숨김) */
-.detail-panel {
-    width: 0;
-    opacity: 0;
+/* Finder 스타일 리스트 태그 초기화 */
+.project-item {
+    cursor: pointer;
+}
+
+.project-title {
+    font-size: 1.1rem;
+    padding: 8px 0;
+    list-style: none; /* 기본 화살표 제거 */
+    transition: color 0.2s ease;
+}
+
+.project-title::-webkit-details-marker {
+    display: none; /* 브라우저 기본 화살표 숨김 */
+}
+
+.project-title:hover {
+    text-decoration: underline;
+}
+
+/* 열린 상태의 링크 강조 */
+.project-item[open] .project-title {
+    font-weight: bold;
+}
+
+/* [오른쪽] 상세 패널 영역 */
+.detail-panel-area {
+    width: 45%;
+    position: relative;
+}
+
+.empty-state {
+    padding: 40px;
+    color: #999;
+    font-size: 0.85rem;
+}
+
+/* 💡 [핵심] <details>가 열렸을 때(.detail-target) 오른쪽 영역으로 내보내기 */
+.project-item[open] .detail-target {
+    position: fixed;
+    top: 53px; /* 헤더 아래부터 */
+    right: 0;
+    width: 45%;
+    height: calc(100vh - 53px);
+    padding: 40px;
+    background-color: #FFFDF7;
     overflow-y: auto;
-    height: 100vh;
-    position: sticky;
-    top: 0;
-    border-left: 0px solid #eee;
-    transition: width 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
-    box-sizing: border-box;
-}
-
-/* 모든 상세 아이템은 기본적으로 안 보이게 설정 */
-.detail-item {
-    display: none;
-}
-
-/* --------------------------------------------------
-   💡 [핵심 해결버그 수정] Pure CSS 타겟팅 선택자
--------------------------------------------------- */
-
-/* 1. 어떤 detail-item이든 :target 상태가 되면 패널을 열어줍니다 */
-.detail-panel:has(.detail-item:target) {
-    width: 45%;               /* 패널 너비 */
-    opacity: 1;
-    padding: 60px 40px 40px 40px; /* 상단 닫기버튼 여백 확보 */
-    border-left: 1px solid #eee;
-}
-
-/* 2. 현재 선택된(#) id를 가진 아이템만 정확히 보여줍니다 */
-.detail-item:target {
-    display: block !important; /* 우선순위 강제 적용으로 밑에 있는 항목들도 무조건 노출 */
-}
-
-/* 닫기 버튼 */
-.close-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 28px;
-    text-decoration: none;
-    color: #000;
-    line-height: 1;
+    border-left: 1px solid #000;
     z-index: 10;
 }
 
-/* 폰트 및 이미지 레이아웃 */
-.detail-item h2 {
+/* 상세 컨텐츠 내부 스타일 */
+.detail-target h2 {
     font-family: 'Coral Pixels', sans-serif;
     margin-bottom: 20px;
 }
 
-.detail-item p {
-    font-family: 'DM Mono', monospace;
+.detail-target p {
     font-size: 0.9rem;
     line-height: 1.6;
-    margin-bottom: 30px;
-    white-space: pre-line; /* HTML 행바꿈 자연스럽게 반영 */
+    margin-bottom: 24px;
+    white-space: pre-line;
 }
 
 .detail-media img,
 .detail-media video {
     width: 100%;
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
     display: block;
 }
 
