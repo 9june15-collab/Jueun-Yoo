@@ -174,10 +174,9 @@ font-size: 20px;
 
 .archive-thumbnail {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4열 정렬 유지 */
-  gap: 16px;
+  grid-template-columns: repeat(4, 1fr); /* 4열 균등 배치 */
+  gap: 20px 16px;                         /* 행/열 간격 */
   width: 100%;
-  align-items: start;
 }
 
 .empty-state {
@@ -197,7 +196,8 @@ font-size: 20px;
 }
 /* 2. 각 드롭다운 기본 상태 (닫혔을 때 - 1칸 차지) */
 .project-dropdown {
-  display: contents; /* details의 박스 레이아웃을 해제하여 자식들이 직접 그리드에 참여하게 함 */
+  grid-column: span 1; /* 기본적으로 4개 컬럼 중 1칸 차지 */
+  width: 100%;
 }
 
 /* 💡 핵심: 3. 드롭다운이 열렸을 때 (open) -> 전체 4열을 다 차지하도록 확장 */
