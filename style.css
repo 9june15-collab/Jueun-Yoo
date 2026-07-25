@@ -180,109 +180,62 @@ font-size: 20px;
     font-size: 0.85rem;
 }
 
-/* 💡 [핵심] <details>가 열렸을 때(.detail-target) 오른쪽 영역으로 내보내기 */
-.project-item[open] .detail-target {
-    position: fixed;
-    top: 53px; /* 헤더 아래부터 */
-    right: 0;
-    width: 45%;
-    height: calc(100vh - 53px);
-    padding: 40px;
-    overflow-y: auto;
-    border-left: 1px solid #000;
-    z-index: 10;
+/* 💡 핵심: 드롭다운이 열렸을 때 (왼쪽 텍스트 : 오른쪽 이미지 2열) */
+.dropdown-content {
+    padding: 30px 0 50px 0;
+    border-top: 1px dashed #ccc;
+    
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* 1 : 2 비율 */
+    gap: 40px;
+    align-items: start;
 }
 
-/* 상세 컨텐츠 내부 스타일 */
-.detail-target h2 {
-    font-family: 'Coral Pixels', sans-serif;
-    margin-bottom: 20px;
+/* 왼쪽 텍스트 정보 */
+.project-info {
+    position: sticky;
+    top: 80px;
 }
 
-.detail-target p {
-    font-size: 0.9rem;
+.project-info p {
+    font-size: 0.85rem;
     line-height: 1.6;
-    margin-bottom: 24px;
+    color: #222;
     white-space: pre-line;
 }
 
-.detail-media img,
-.detail-media video {
+/* 오른쪽 이미지 미디어 (2열 균등 배치) */
+.detail-media {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    width: 100%;
+}
+
+.detail-media img {
     width: 100%;
     height: auto;
-    margin-bottom: 16px;
     display: block;
-}
-/* 모바일 규격 */
-@media (max-width: 600px) {
-    /* 1. 전체 좌우 여백 조정 (모바일은 좌우 20px 정도로 좁혀야 시원해 보입니다) */
-    body {
-        padding: 0 10px !important;
-    }
-
-    /* 2. 고정된 헤더 스타일 모바일 최적화 */
-    .site-header, .overlay-header {
-        position: relative !important; /* 💡 모바일에서는 글이 길면 이미지를 너무 많이 가리므로 고정을 풀고 위로 보냅니다 */
-        top: 0 !important;
-        left: 0 !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        padding: 10px 0 10px 0 !important;
-    }
-   .project-info{
-        position: relative !important; /* 💡 모바일에서는 글이 길면 이미지를 너무 많이 가리므로 고정을 풀고 위로 보냅니다 */
-        top: 0 !important;
-        left: 0 !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        padding: 10px 0 10px 0 !important;
-   }
-
-    /* 3. 갤러리 영역 위쪽 여백 조정 */
-    .container {
-        padding-top: 10px !important; /* 헤더 고정을 풀었으므로 위쪽 여백을 대폭 줄입니다 */
-    }
-
-    /* 4. 💡 [핵심] 썸네일 박스 모바일 정렬 */
-    .thumbnail-box {
-        display: flex !important;
-        flex-direction: column !important; /* 💡 가로 나열 대신 위에서 아래로 1열 세로 정렬 */
-        align-items: center !important;
-        gap: 30px !important; /* 썸네일 사이의 세로 간격을 일정하게 부여 */
-        width: 100% !important;
-    }
-
-    /* 5. 💡 [핵심] 썸네일 이미지 크기 강제 조정 */
-    .thumbnail-box a {
-        width: 100% !important;      /* 모바일 화면 가로폭에 꽉 차게 설정 */
-        max-width: 335px !important;  /* 375px 화면에서 좌우 여백을 제외한 최대 너비 */
-        margin-right: 0 !important;   /* 자바스크립트가 준 랜덤 가로 마진 무효화 */
-        margin-bottom: 0 !important;  /* 자바스크립트가 준 랜덤 세로 마진 무효화 (gap으로 제어) */
-    }
-
-    .thumbnail-box img {
-        width: 100% !important;
-        height: auto !important;      /* 이미지 비율 유지하며 꽉 채우기 */
-        object-fit: cover !important;
-    }
-}
-.archive-thumbnail{
-   display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-.archive-thumbnail a {
-    display: inline-block;     /* 💡 컬럼 내부에서 이미지가 잘려서 다음 컬럼으로 넘어가는 버그 방지 */
-    width: 100%;               /* 부모 컬럼 너비에 100% 맞춤 */
-    margin-bottom: 10px;       /* 이미지 아래쪽 간격 (세로 갭) */
+    border: 1px solid #eaeaea;
 }
 
-/* 3. 💡 [가장 중요] 이미지 비율 자동 조정 설정 */
-.archive-thumbnail img {
-    width: 100% !important;     /* 컬럼 가로폭에 꽉 맞추고 */
-    height: auto !important;    /* 💡 가로폭 비율에 맞춰 세로 높이를 자동 조절 (찌그러짐 방지) */
-    display: block;            
+/* 화면이 좁아지는 모바일 환경 분기 */
+@media (max-width: 768px) {
+    .container_archive {
+        padding: 0 20px 40px 20px;
+    }
     
-    /* 혹시 디테일 완성도를 높이고 싶다면 부드러운 라운딩 추가 */
-    border-radius: 4px;        
+    .dropdown-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .detail-media {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-info {
+        position: static;
+    }
 }
+
