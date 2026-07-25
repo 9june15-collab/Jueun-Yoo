@@ -104,7 +104,6 @@ font-size: 20px;
     top: 0;
     width: 100%;
     padding: 24px 0 16px 0;
-    background-color: #FFFDF7;
     border-bottom: 1px solid #000;
     font-size: 0.9rem;
     z-index: 100;
@@ -172,6 +171,13 @@ font-size: 20px;
 .detail-panel-area {
     width: 45%;
     position: relative;
+}
+
+.archive-thumbnail {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4열 균등 배치 */
+  gap: 20px 16px;                         /* 행/열 간격 */
+  width: 100%;
 }
 
 .empty-state {
