@@ -16,10 +16,10 @@ width: 100%;
     padding-bottom: 40px;
 }
 .container_archive {max-width: 1200px;  
-    max-width: 1200px; /* 너무 넓어지거나 깨지지 않도록 한계 폭 설정 */
-    margin: 0 auto;    /* 화면 중앙 배치 */
-    padding: 40px;
-    min-height: calc(100vh - 53px);
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px 60px 40px;
+    min-height: 100vh;
    
 }
 .header_text{
@@ -103,13 +103,15 @@ font-size: 20px;
     position: sticky;
     top: 0;
     width: 100%;
-    padding: 16px 40px;
+    padding: 24px 0 16px 0;
+    background-color: #FFFDF7;
     border-bottom: 1px solid #000;
     font-size: 0.9rem;
     z-index: 100;
     display: flex;
     gap: 8px;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .finder-nav .separator {
@@ -265,12 +267,9 @@ font-size: 20px;
     }
 }
 .archive-thumbnail{
-   column-count: 4;           /* 💻 PC 기준 기본 3열 설정 (2열을 원하시면 2로 변경 가능) */
-    column-gap: 5px;          /* 열과 열 사이의 가로 간격 */
-    
-    width: 100%;    
-    margin: auto auto;
-   max-width: 1200px;
+   display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 .archive-thumbnail a {
     display: inline-block;     /* 💡 컬럼 내부에서 이미지가 잘려서 다음 컬럼으로 넘어가는 버그 방지 */
