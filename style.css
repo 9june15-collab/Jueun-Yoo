@@ -257,7 +257,6 @@ justify-content: center;
 }
 /* 하위 드롭다운 */
 
-/* 💡 2단계 서브 드롭다운 그룹 */
 .sub-dropdown-group {
   display: flex;
   flex-direction: column;
@@ -288,7 +287,6 @@ justify-content: center;
   cursor: pointer;
   list-style: none;
   user-select: none;
-  background-color: #f9f9f9;
 }
 
 .sub-header::-webkit-details-marker {
