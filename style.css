@@ -150,16 +150,21 @@ font-size: 20px;
 }
 
 .project-title {
-   display: inline-block;
-  position: static; 
-  top: 0; /* 페이지 상단 고정 */
+   display: block;            /* sticky 및 너비 제어를 위해 block 추천 */
+  position: sticky;          /* static에서 sticky로 변경해야 스크롤 고정 작동 */
+  top: 60px;                 /* finder-nav 아래 고정 위치 (필요시 값 조절) */
   z-index: 90;
-    font-size: 1.1rem;
-    padding: 8px 0;
-    list-style: none; /* 기본 화살표 제거 */
-    transition: color 0.2s ease;
-  /* finder-nav의 높이 + finder-divider 위치만큼 top을 부여 */
-  align-self: start;
+  background-color: #FFFDF7; /* 고정 시 뒤쪽 스크롤 내용 가림 */
+  
+  font-size: 1.1rem;
+  font-weight: 400;          /* 💡 기본 두께를 레귤러(400)로 명시적 고정 */
+  color: #222;               /* 💡 기본 글자색 (열리기 전 빨간색 방지) */
+  
+  padding: 8px 0;
+  list-style: none;
+  transition: color 0.2s ease, font-weight 0.2s ease;
+  cursor: pointer;
+}
 }
 
 .project-title::-webkit-details-marker {
