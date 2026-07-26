@@ -179,7 +179,7 @@ font-size: 20px;
     font-size: 0.85rem;
 }
 .dropdown-thumbnail{
-    width: 50%;            /* 썸네일 가로 크기 */
+    width: 30%;            /* 썸네일 가로 크기 */
   height: auto;           /* 썸네일 세로 크기 */
     min-width: 300px;
   object-fit: cover;      /* 이미지 비율 유지하며 채우기 */
