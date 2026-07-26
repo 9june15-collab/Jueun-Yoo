@@ -151,16 +151,14 @@ font-size: 20px;
 }
 
 .project-title {
-  display: inline-block; 
-  /* 또는 display: block; */
-
-  position: sticky;
-  top: 0; /* 또는 finder-nav 높이 */
+    position: sticky;
+  top: 0; /* 페이지 상단 고정 */
   z-index: 90;
     font-size: 1.1rem;
     padding: 8px 0;
     list-style: none; /* 기본 화살표 제거 */
     transition: color 0.2s ease;
+  /* finder-nav의 높이 + finder-divider 위치만큼 top을 부여 */
   align-self: start;
 }
 
@@ -174,6 +172,9 @@ font-size: 20px;
 
 /* 열린 상태의 링크 강조 */
 .project-item[open] .project-title {
+    position: sticky;
+  top: 0; /* 또는 finder-nav 높이 (예: 60px) */
+  z-index: 90;
     font-weight: bold;
     color: #FC2626;
 }
