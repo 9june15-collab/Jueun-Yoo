@@ -167,6 +167,7 @@ font-size: 20px;
 /* 열린 상태의 링크 강조 */
 .project-item[open] .project-title {
     font-weight: bold;
+    color: #FC2626;
 }
 
 /* [오른쪽] 상세 패널 영역 */
