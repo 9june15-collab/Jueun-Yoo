@@ -207,7 +207,9 @@ justify-content: center;
 .project-dropdown[open] {
   grid-column: 1 / -1; /* 첫 번째 컬럼부터 끝까지 (4컬럼 전체 너비 차지) */
 }
-
+.project-dropdown[open] .dropdown-thumbnail {
+  display: none;
+}
 /* 왼쪽 텍스트 정보 */
 .project-info {
     position: sticky;
