@@ -198,6 +198,7 @@ font-size: 20px;
 }
 /* 2. 각 드롭다운 기본 상태 (닫혔을 때 - 1칸 차지) */
 .project-dropdown {
+justify-content: center;
   grid-column: span 1; /* 기본적으로 4개 컬럼 중 1칸 차지 */
   width: 100%;
 }
