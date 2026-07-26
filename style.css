@@ -99,10 +99,11 @@ font-size: 20px;
 /* 2차 수정본(상세페이지)*/
 /* 전체 2-Column 분할 레이아웃 */
 .finder-nav {
-    position: sticky;
-    top: 0;
+   position: sticky;
+  top: 0;
     width: 100%;
-    padding: 24px 0 16px 0;
+      height: 60px;
+    padding: 20px 0 16px 0;
     border-bottom: 1px solid #000;
     font-size: 0.9rem;
     z-index: 100;
@@ -145,17 +146,20 @@ font-size: 20px;
 
 /* Finder 스타일 리스트 태그 초기화 */
 .project-item {
+    position: relative;
     cursor: pointer;
 }
 
 .project-title {
     position: sticky;
+    position: sticky;
+  top: 0; /* 페이지 상단 고정 */
+  z-index: 90;
     font-size: 1.1rem;
     padding: 8px 0;
     list-style: none; /* 기본 화살표 제거 */
     transition: color 0.2s ease;
   /* finder-nav의 높이 + finder-divider 위치만큼 top을 부여 */
-  top: 50px; 
   align-self: start;
 }
 
@@ -219,8 +223,12 @@ justify-content: center;
 }
 /* 왼쪽 텍스트 정보 */
 .project-info {
+    position: sticky;
+ 
    width: 100%;
-  position: static;
+     top: 61px; 
+  z-index: 80;
+    
 }
 
 .project-info p {
