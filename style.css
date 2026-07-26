@@ -104,7 +104,6 @@ font-size: 20px;
     top: 0;
     width: 100%;
     padding: 24px 0 16px 0;
-    background-color: #FFFDF7;
     border-bottom: 1px solid #000;
     font-size: 0.9rem;
     z-index: 100;
@@ -180,10 +179,10 @@ font-size: 20px;
     font-size: 0.85rem;
 }
 .dropdown-thumbnail{
-    width: 40px;            /* 썸네일 가로 크기 */
-  height: 40px;           /* 썸네일 세로 크기 */
+    width: 50%;            /* 썸네일 가로 크기 */
+  height: auto;           /* 썸네일 세로 크기 */
+    min-width: 300px;
   object-fit: cover;      /* 이미지 비율 유지하며 채우기 */
-  border: 1px solid #000;  /* Finder 스타일 테두리 */
   flex-shrink: 0;         /* 공간 부족해도 썸네일 크기 유지 */
   transition: transform 0.2s ease;
 }
