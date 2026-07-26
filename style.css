@@ -154,7 +154,6 @@ font-size: 20px;
   position: sticky;          /* static에서 sticky로 변경해야 스크롤 고정 작동 */
   top: 60px;                 /* finder-nav 아래 고정 위치 (필요시 값 조절) */
   z-index: 90;
-  background-color: #FFFDF7; /* 고정 시 뒤쪽 스크롤 내용 가림 */
   
   font-size: 1.1rem;
   font-weight: 400;          /* 💡 기본 두께를 레귤러(400)로 명시적 고정 */
@@ -217,10 +216,9 @@ justify-content: center;
 .dropdown-header,
 .project-item[open] .project-title {
    position: sticky;
-  top: 15px; /* 페이지 최상단 고정 (finder-nav 뒤로 들어가거나 상단에 밀착) */
+  top: 5px; /* 페이지 최상단 고정 (finder-nav 뒤로 들어가거나 상단에 밀착) */
   z-index: 90;
     font-weight: bold;
-    color: #FC2626;
 }
 .project-dropdown[open] .dropdown-thumbnail {
   display: none;
