@@ -175,16 +175,6 @@ font-size: 20px;
     text-decoration: underline;
 }
 
-/* 열린 상태의 링크 강조 */
-.dropdown-header,
-.project-item[open] .project-title {
-   position: sticky;
-  top: 15px; /* 페이지 최상단 고정 (finder-nav 뒤로 들어가거나 상단에 밀착) */
-  z-index: 90;
-    font-weight: bold;
-    color: #FC2626;
-}
-
 /* [오른쪽] 상세 패널 영역 */
 .detail-panel-area {
     width: 45%;
@@ -223,8 +213,14 @@ justify-content: center;
 .project-dropdown[open] {
   grid-column: 1 / -1; /* 첫 번째 컬럼부터 끝까지 (4컬럼 전체 너비 차지) */
 }
-.project-dropdown[open] .project-title {
-  color: #FC2626;
+/* 열린 상태의 링크 강조 */
+.dropdown-header,
+.project-item[open] .project-title {
+   position: sticky;
+  top: 15px; /* 페이지 최상단 고정 (finder-nav 뒤로 들어가거나 상단에 밀착) */
+  z-index: 90;
+    font-weight: bold;
+    color: #FC2626;
 }
 .project-dropdown[open] .dropdown-thumbnail {
   display: none;
