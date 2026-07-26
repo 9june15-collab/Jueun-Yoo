@@ -191,9 +191,9 @@ font-size: 20px;
 }
 /* 💡 핵심: 드롭다운이 열렸을 때 (왼쪽 텍스트 : 오른쪽 이미지 2열) */
 .dropdown-content {
-    display: grid;
-  grid-template-columns: 1fr 3fr; /* 설명 1 : 이미지 3 비율 */
-  gap: 24px;
+    display: flex;
+  flex-direction: column; /* 위에서 아래로 배치 */
+  gap: 20px;
   padding: 20px 0;
   border-top: 1px dashed #ccc;
   margin-top: 10px;
@@ -216,8 +216,8 @@ justify-content: center;
 }
 /* 왼쪽 텍스트 정보 */
 .project-info {
-    position: sticky;
-    top: 80px;
+   width: 100%;
+  position: static;
 }
 
 .project-info p {
@@ -230,9 +230,10 @@ justify-content: center;
 /* 오른쪽 이미지 미디어 (2열 균등 배치) */
 .detail-media {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-    width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  width: 100%;
+}
 }
 
 .detail-media img {
