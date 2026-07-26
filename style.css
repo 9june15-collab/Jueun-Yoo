@@ -149,10 +149,14 @@ font-size: 20px;
 }
 
 .project-title {
+    position: sticky;
     font-size: 1.1rem;
     padding: 8px 0;
     list-style: none; /* 기본 화살표 제거 */
     transition: color 0.2s ease;
+  /* finder-nav의 높이 + finder-divider 위치만큼 top을 부여 */
+  top: 50px; 
+  align-self: start;
 }
 
 .project-title::-webkit-details-marker {
@@ -195,7 +199,7 @@ font-size: 20px;
   gap: 20px;
   padding: 20px 0;
   border-top: 1px dashed #ccc;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 /* 2. 각 드롭다운 기본 상태 (닫혔을 때 - 1칸 차지) */
 .project-dropdown {
