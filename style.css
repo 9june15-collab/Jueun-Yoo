@@ -177,7 +177,7 @@ font-size: 20px;
 
 .project-dropdown .project-title::after {
   content: "☞";               /* 또는 "→", "▼" 등 */
-  font-size: 0.85rem;
+  font-size: 2rem;
   margin-left: 8px;
   transition: transform 0.2s ease;
 }
