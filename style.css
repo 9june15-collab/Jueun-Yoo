@@ -216,7 +216,7 @@ justify-content: center;
 .dropdown-header,
 .project-item[open] .project-title {
    position: sticky;
-  top: 5px; /* 페이지 최상단 고정 (finder-nav 뒤로 들어가거나 상단에 밀착) */
+  top: 3px; /* 페이지 최상단 고정 (finder-nav 뒤로 들어가거나 상단에 밀착) */
   z-index: 90;
     font-weight: bold;
 }
