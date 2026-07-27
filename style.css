@@ -269,7 +269,6 @@ justify-content: center;
 /* 서브 드롭다운 아이템 */
 .sub-dropdown {
   width: 100%;
-  transition: border-color 0.2s ease;
 }
 
 .sub-dropdown[open] {
@@ -287,6 +286,12 @@ justify-content: center;
   list-style: none;
   user-select: none;
 }
+.sub-header:hover{
+    
+    color: #F54927;
+    text-decoration: underline;
+}
+    
 
 .sub-header::-webkit-details-marker {
   display: none;
