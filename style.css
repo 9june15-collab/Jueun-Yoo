@@ -100,7 +100,7 @@ font-size: 20px;
 /* 전체 2-Column 분할 레이아웃 */
 .finder-nav {
   position: sticky;
-  top: 0;
+  top: 5px;
   width: 100%;
   padding: 24px 0 22px 10px;
   border-bottom: 1px solid #000;
