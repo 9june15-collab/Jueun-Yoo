@@ -175,6 +175,13 @@ font-size: 20px;
     text-decoration: underline;
 }
 
+.project-dropdown .project-title::after {
+  content: "☞";               /* 또는 "→", "▼" 등 */
+  font-size: 0.85rem;
+  margin-left: 8px;
+  transition: transform 0.2s ease;
+}
+
 /* [오른쪽] 상세 패널 영역 */
 .detail-panel-area {
     width: 45%;
