@@ -225,7 +225,6 @@ justify-content: center;
   grid-column: 1 / -1; /* 첫 번째 컬럼부터 끝까지 (4컬럼 전체 너비 차지) */
 }
 /* 열린 상태의 링크 강조 */
-.dropdown-header,
 .project-item[open] .project-title {
    position: sticky;
   top: 5px; /* 페이지 최상단 고정 (finder-nav 뒤로 들어가거나 상단에 밀착) */
