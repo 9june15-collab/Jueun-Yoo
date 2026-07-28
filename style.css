@@ -50,7 +50,7 @@ width: 100%;
 
 .thumbnail-box {   
     
-    width: 400px;
+    width: 100%
     height: auto;
     pointer-events: none; 
 }
@@ -58,9 +58,11 @@ width: 100%;
 
 .thumbnail-box img {
    
-   width: 100%; 
-   height: auto;
-   object-fit: cover;
+   width: 100%;
+  height: auto;
+  max-height: 600px;  /* 필요 시 최대 높이 제한 (생략 가능) */
+  object-fit: cover;  /* 비율 유지 */
+  display: block;
 }
 
 
