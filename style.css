@@ -50,7 +50,7 @@ width: 100%;
 
 .thumbnail-box {   
     
-    width: 100%
+    width: 100%;
     height: auto;
     pointer-events: none; 
 }
@@ -167,7 +167,6 @@ font-size: 20px;
   transition: color 0.2s ease, font-weight 0.2s ease;
   cursor: pointer;
 }
-}
 
 .project-title::-webkit-details-marker {
     display: none; /* 브라우저 기본 화살표 숨김 */
@@ -246,7 +245,7 @@ justify-content: center;
      top: 61px; 
   z-index: 80;
   padding: 12px 0;
-  border-bottom: 1px solid #000; /
+  border-bottom: 1px solid #000;
     
 }
 
