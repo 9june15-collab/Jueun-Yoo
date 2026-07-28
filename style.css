@@ -160,7 +160,7 @@ font-size: 20px;
   color: #222;               /* 💡 기본 글자색 (열리기 전 빨간색 방지) */
   
   font-size: 1.1rem;
-    padding: 8px 0;
+    padding: 4px 0;
   list-style: none;
   transition: color 0.2s ease, font-weight 0.2s ease;
   cursor: pointer;
