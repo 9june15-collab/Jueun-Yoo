@@ -211,10 +211,9 @@ font-size: 20px;
 .hero-media img {
   width: 100%;
   height: auto;
-  max-height: 500px;  /* 필요 시 최대 높이 제한 (생략 가능) */
+  max-height: 600px;  /* 필요 시 최대 높이 제한 (생략 가능) */
   object-fit: cover;  /* 비율 유지 */
   display: block;
-  border: 1px solid #eaeaea;
 }
 /* 2. 각 드롭다운 기본 상태 (닫혔을 때 - 1칸 차지) */
 .project-dropdown {
