@@ -209,7 +209,12 @@ font-size: 20px;
   font-size: 0.8em;      /* 텍스트 크기에 맞춰 살짝 조정 */
   transition: transform 0.2s ease; /* 회전 애니메이션용 (선택 사항) */
 }
-
+summary {
+  list-style: none;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
 /* 3. 드롭다운이 열렸을 때(open): 아래 방향 삼각형으로 변경 */
 .project-dropdown[open] .project-title::before {
   content: "☆";          /* 💡 열림 상태 기호 (예: '▼', '▾', '−' 등) */
