@@ -23,6 +23,11 @@ width: 100%;
     min-height: 100vh
    
 }
+.container_arrow{
+    display: static;
+    align-item: center;
+    top: 25px;
+}
 .header_text{
  width: 900px;
  max-width: 100%;
