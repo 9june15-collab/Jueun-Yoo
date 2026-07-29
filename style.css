@@ -63,7 +63,7 @@ width: 100%;
    
    width: 40%;
     min-width: 200px;
-    mix-blend-mode: multiply;
+    /* mix-blend-mode: multiply; */
   height: auto;
   display: block;
 }
