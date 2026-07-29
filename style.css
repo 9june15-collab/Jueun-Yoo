@@ -147,10 +147,8 @@ font-size: 20px;
 }
 
 .project-title {
-  display: block;
-  position: sticky;
-  /* works-header-group 높이 + top 위치(60px)를 계산해서 디바이더 바로 밑에 착 붙게 설정 */
-  top: 200px; /* 💡 (finder-nav 높이 60px + Works 헤더 높이 ~45px) */
+ position: sticky;
+  top: 60px; /* finder-nav 아래 */
   z-index: 90;
   
   font-size: 1.1rem;
