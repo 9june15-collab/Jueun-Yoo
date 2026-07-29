@@ -194,7 +194,7 @@ font-size: 20px;
   flex-direction: column; /* 위에서 아래로 배치 */
   gap: 20px;
   padding: 20px 0;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 .project-title::before {
   content: "★";          /* 💡 닫힘 상태 기호 (예: '▶', '▶ ', '▸', '+' 등) */
@@ -251,7 +251,7 @@ justify-content: center;
 /* 왼쪽 텍스트 정보 */
 .project-info {
    position: static;
-  top: 30px; /* 💡 finder-nav(60px) + project-title 높이(~35px) 바로 아래 */
+  /* top: 30px; /* 💡 finder-nav(60px) + project-title 높이(~35px) 바로 아래 */ */
   z-index: 80;
   padding: 12px 0;
   border-bottom: 1px solid #000;
