@@ -107,6 +107,7 @@ font-size: 20px;
     width: 100%;
     min-height: calc(100vh - 53px); /* 헤더 높이 제외 */
     position: relative;
+    background-color: #C9C9C9;
 }
 
 /* [왼쪽] 아카이브 목록 */
