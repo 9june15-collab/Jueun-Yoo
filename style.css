@@ -203,7 +203,7 @@ font-size: 20px;
   margin-top: 20px;
 }
 .project-title::before {
-  content: &#9733;          /* 💡 닫힘 상태 기호 (예: '▶', '▶ ', '▸', '+' 등) */
+  content: "★";          /* 💡 닫힘 상태 기호 (예: '▶', '▶ ', '▸', '+' 등) */
   display: inline-block;
   margin-right: 8px;     /* 오른쪽 텍스트와의 간격 */
   font-size: 0.8em;      /* 텍스트 크기에 맞춰 살짝 조정 */
@@ -212,7 +212,7 @@ font-size: 20px;
 
 /* 3. 드롭다운이 열렸을 때(open): 아래 방향 삼각형으로 변경 */
 .project-dropdown[open] .project-title::before {
-  content: &#9734;          /* 💡 열림 상태 기호 (예: '▼', '▾', '−' 등) */
+  content: "☆";          /* 💡 열림 상태 기호 (예: '▼', '▾', '−' 등) */
 }
 .hero-media {
   width: 100%;
