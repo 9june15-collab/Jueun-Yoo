@@ -98,29 +98,6 @@ font-size: 20px;
 
 /* 2차 수정본(상세페이지)*/
 /* 전체 2-Column 분할 레이아웃 */
-.finder-nav {
-  position: sticky;
-  top: 5px;
-  width: 100%;
-  padding: 24px 0 22px 10px;
-  border-bottom: 1px solid #000;
-  font-size: 0.9rem;
-  z-index: 100; /* 가장 위에 위치 */
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  justify-content: flex-end;
-  margin-bottom: 15px;
-}
-
-.finder-nav .separator {
-    opacity: 0.4;
-}
-
-.finder-nav .path-current {
-    font-weight: 500;
-    font-size: 1.2rem;
-}
 
 /* 2. 분할 레이아웃 */
 .split-layout {
