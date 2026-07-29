@@ -73,7 +73,7 @@ body{
   font-style: normal;
   line-height: 1.5;
    font-size: 15px;
-     background-color: #C9C9C9;
+     /* background-color: #C9C9C9; */
 }
 p{
   font-family: "DM Mono", monospace;
@@ -211,7 +211,7 @@ summary::-webkit-details-marker {
 }
 /* 3. 드롭다운이 열렸을 때(open): 아래 방향 삼각형으로 변경 */
 .project-dropdown[open] .project-title::before {
-  content: "☆";          /* 💡 열림 상태 기호 (예: '▼', '▾', '−' 등) */
+  content: "≠";          /* 💡 열림 상태 기호 (예: '▼', '▾', '−' 등) */
 font-size: 2em;  
 }
 .hero-media {
