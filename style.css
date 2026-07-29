@@ -206,7 +206,7 @@ font-size: 20px;
   content: "★";          /* 💡 닫힘 상태 기호 (예: '▶', '▶ ', '▸', '+' 등) */
   display: inline-block;
   margin-right: 8px;     /* 오른쪽 텍스트와의 간격 */
-  font-size: 3em;      /* 텍스트 크기에 맞춰 살짝 조정 */
+  font-size: 1em;      /* 텍스트 크기에 맞춰 살짝 조정 */
   transition: transform 0.2s ease; /* 회전 애니메이션용 (선택 사항) */
 }
 summary {
@@ -218,7 +218,7 @@ summary::-webkit-details-marker {
 /* 3. 드롭다운이 열렸을 때(open): 아래 방향 삼각형으로 변경 */
 .project-dropdown[open] .project-title::before {
   content: "☆";          /* 💡 열림 상태 기호 (예: '▼', '▾', '−' 등) */
-font-size: 3em;  
+font-size: 1em;  
 }
 .hero-media {
   width: 100%;
