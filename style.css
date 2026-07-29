@@ -94,7 +94,6 @@ font-size: 20px;
 
    grid-column: 2/span 3; 
     grid-row: 1;
- 
 }
 
 /* 2차 수정본(상세페이지)*/
@@ -202,6 +201,18 @@ font-size: 20px;
   gap: 20px;
   padding: 20px 0;
   margin-top: 20px;
+}
+.project-title::before {
+  content: &#9733;          /* 💡 닫힘 상태 기호 (예: '▶', '▶ ', '▸', '+' 등) */
+  display: inline-block;
+  margin-right: 8px;     /* 오른쪽 텍스트와의 간격 */
+  font-size: 0.8em;      /* 텍스트 크기에 맞춰 살짝 조정 */
+  transition: transform 0.2s ease; /* 회전 애니메이션용 (선택 사항) */
+}
+
+/* 3. 드롭다운이 열렸을 때(open): 아래 방향 삼각형으로 변경 */
+.project-dropdown[open] .project-title::before {
+  content: &#9734;          /* 💡 열림 상태 기호 (예: '▼', '▾', '−' 등) */
 }
 .hero-media {
   width: 100%;
