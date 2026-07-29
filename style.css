@@ -277,7 +277,6 @@ justify-content: center;
     width: 80%;
     height: auto;
     display: block;
-    border: 1px solid #eaeaea;
 }
 /* 하위 드롭다운 */
 
@@ -327,7 +326,6 @@ justify-content: center;
 /* 서브 드롭다운 내부 펼침 콘텐츠 */
 .sub-content {
   padding: 16px;
-  border-top: 1px solid #eee;
 }
 
 /* 이미지 미디어 그리드는 기존 2열 유지 */
