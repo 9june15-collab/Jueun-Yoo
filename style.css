@@ -246,8 +246,7 @@ justify-content: center;
 /* 왼쪽 텍스트 정보 */
 .project-info {
    position: sticky;
-     width: 100%;
-     top: 61px; 
+  top: 95px; /* 💡 finder-nav(60px) + project-title 높이(~35px) 바로 아래 */
   z-index: 80;
   padding: 12px 0;
   border-bottom: 1px solid #000;
