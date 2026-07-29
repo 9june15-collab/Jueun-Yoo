@@ -134,6 +134,7 @@ font-size: 20px;
  font-family: "DM Mono", monospace;
   font-size: 1rem;
   font-weight: 400;
+    background-color: #C9C9C9;
 }
 
 /* 💡 디바이더 선 */
@@ -157,6 +158,7 @@ font-size: 20px;
   font-size: 1.1rem;
   padding: 4px 0;
   cursor: pointer;
+    background-color: #C9C9C9;
 }
 
 .project-title::-webkit-details-marker {
