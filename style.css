@@ -120,26 +120,43 @@ font-size: 20px;
     gap: 12px;
 }
 
-/* Finder 스타일 리스트 태그 초기화 */
+.works-header-group {
+  position: sticky;
+  top: 60px; /* 💡 finder-nav 바로 밑 위치 (상단 nav 높이에 맞춰 조정) */
+  z-index: 95; /* project-title(90)보다 위에 배치 */
+  background-color: #FFFDF7; /* 스크롤 시 통과하는 타이틀들을 가려주는 역할 */
+  padding-top: 10px;
+}
+
+.works-title {
+  font-family: "DM Mono", monospace;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+/* 💡 디바이더 선 */
+.works-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #000; /* 또는 border-bottom: 1px solid #000; */
+  margin-bottom: 12px;
+}
+
 .project-item {
     position: relative;
     cursor: pointer;
 }
 
 .project-title {
-   display: block;            /* sticky 및 너비 제어를 위해 block 추천 */
-  position: sticky;          /* static에서 sticky로 변경해야 스크롤 고정 작동 */
-  top: 60px;                 /* finder-nav 아래 고정 위치 (필요시 값 조절) */
+  display: block;
+  position: sticky;
+  /* works-header-group 높이 + top 위치(60px)를 계산해서 디바이더 바로 밑에 착 붙게 설정 */
+  top: 105px; /* 💡 (finder-nav 높이 60px + Works 헤더 높이 ~45px) */
   z-index: 90;
-
-  font-size: 1.1rem;
-  font-weight: 400;          /* 💡 기본 두께를 레귤러(400)로 명시적 고정 */
-  color: #222;               /* 💡 기본 글자색 (열리기 전 빨간색 방지) */
   
   font-size: 1.1rem;
-    padding: 4px 0;
-  list-style: none;
-  transition: color 0.2s ease, font-weight 0.2s ease;
+  padding: 4px 0;
   cursor: pointer;
 }
 
