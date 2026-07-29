@@ -61,8 +61,7 @@ width: 100%;
 
 .thumbnail-box img {
    
-   width: 40%;
-    min-width: 200px;
+   width: 30%;
     /* mix-blend-mode: multiply; */
   height: auto;
   display: block;
