@@ -81,7 +81,8 @@ body{
   font-style: normal;
   line-height: 1.5;
    font-size: 15px;
-     background-color: #C9C9C9;
+Backgroun-color: #FFFD03;
+    
 }
 p{
   font-family: "DM Mono", monospace;
@@ -116,7 +117,7 @@ font-size: 20px;
     width: 100%;
     min-height: calc(100vh - 53px); /* 헤더 높이 제외 */
     position: relative;
-    background-color: #C9C9C9;
+   
 }
 
 /* [왼쪽] 아카이브 목록 */
@@ -141,7 +142,7 @@ font-size: 20px;
  font-family: "DM Mono", monospace;
   font-size: 1rem;
   font-weight: 400;
-    background-color: #C9C9C9;
+   
 }
 
 /* 💡 디바이더 선 */
@@ -165,7 +166,7 @@ font-size: 20px;
   font-size: 1.1rem;
   padding: 4px 0;
   cursor: pointer;
-    background-color: #C9C9C9;
+    
 }
 
 .project-title::-webkit-details-marker {
