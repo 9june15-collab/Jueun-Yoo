@@ -52,13 +52,7 @@ width: 100%;
 }
 
 .thumbnail-box {   
-  width: 200px;
-  height: auto;
-  align-self: center;
-}
-
-.thumbnail-box img {
-  position: fixed;
+ position: fixed;
   right: 40px;     /* 오른쪽 벽에서 40px 떨어진 위치 */
   bottom: 40px;    /* 💡 아래쪽에 고정하고 싶다면 bottom 사용 (위쪽 고정 시 top: 40px;) */
   
@@ -67,6 +61,13 @@ width: 100%;
   height: auto;
   align-self: auto; /* flex 정렬 속성 무효화 */
   z-index: 100;
+}
+
+.thumbnail-box img {
+ width: 200px;
+  height: auto;
+  display: block;
+  border-radius: 4px;
 }
 
 /* 💡 마우스 호버 상태 */
