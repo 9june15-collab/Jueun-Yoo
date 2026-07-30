@@ -17,6 +17,7 @@ width: 100%;
 
 }
 .container_archive {
+    display: flex;
   width: 100%;
   max-width: 1300px;
   margin: 0;               /* 💡 margin: 0 auto 대신 margin: 0 으로 설정하여 좌측 정렬 */
