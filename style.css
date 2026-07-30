@@ -58,13 +58,15 @@ width: 100%;
 }
 
 .thumbnail-box img {
-  width: 200px;
+  position: fixed;
+  right: 40px;     /* 오른쪽 벽에서 40px 떨어진 위치 */
+  bottom: 40px;    /* 💡 아래쪽에 고정하고 싶다면 bottom 사용 (위쪽 고정 시 top: 40px;) */
+  
+  /* 기존 flex 관련 속성 해제 및 레이어 순서 지정 */
+  width: auto;     /* 내용물 크기에 맞춤 */
   height: auto;
-  display: block;
-
-  /* 💡 기본 테두리 세팅 (투명 상태) */
-  border: 3px solid transparent;
-  transition: all 0.3s ease; /* 호버 시 부드러운 전환 효과 */
+  align-self: auto; /* flex 정렬 속성 무효화 */
+  z-index: 100;
 }
 
 /* 💡 마우스 호버 상태 */
