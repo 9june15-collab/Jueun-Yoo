@@ -9,6 +9,7 @@ width: 100%;
     
     /* 자식 요소들을 무조건 가로 중앙 정렬시키는 Flex 세팅 */
     display: flex;
+    position: relative;
     top: 150px;
     flex-direction: column;   /* 위에서 아래로 차곡차곡 배치 */        
      padding: 0 20px 20px;
@@ -54,20 +55,19 @@ width: 100%;
 }
 
 .thumbnail-box {   
- position: fixed;
-  right: 20px;     /* 오른쪽 벽에서 40px 떨어진 위치 */
-  top: 20px;    /* 💡 아래쪽에 고정하고 싶다면 bottom 사용 (위쪽 고정 시 top: 40px;) */
+position: absolute; /* 💡 부모 컨테이너를 기준으로 위치 잡기 */
+  right: 40px;        /* 오른쪽 벽에서 40px 띄움 */
+  top: 40px;          /* 컨테이너 맨 위에서 40px 띄움 (또는 bottom: 40px) */
   
-  /* 기존 flex 관련 속성 해제 및 레이어 순서 지정 */
-  width: auto;     /* 내용물 크기에 맞춤 */
+  width: auto;
   height: auto;
-  align-self: auto; /* flex 정렬 속성 무효화 */
-  z-index: 100;
+  z-index: 10;        /* 텍스트 위에 떠있도록 레이어 지정 */
+  pointer-events: auto;
 }
 
 .thumbnail-box img {
- width: 100px;
-  height: auto;
+ width: auto;
+  height: 30%;
   display: block;
   border-radius: 4px;
 }
