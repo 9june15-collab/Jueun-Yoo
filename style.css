@@ -330,17 +330,16 @@ justify-content: center;
 
 /* 이미지 미디어 그리드는 기존 2열 유지 */
 .sub-content .detail-media {
-  display: grid;
+      display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+  gap: 20px;
   width: 100%;
 }
 
 .sub-content .detail-media img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+  width: 80%;
+    height: auto;
+    display: block;
 /* 화면이 좁아지는 모바일 환경 분기 */
 @media (max-width: 768px) {
     .container_archive {
