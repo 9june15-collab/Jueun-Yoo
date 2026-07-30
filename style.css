@@ -53,22 +53,26 @@ width: 100%;
 }
 
 .thumbnail-box {   
-    
-    width: 100%;
-    height: auto;
-    pointer-events: none; 
-    align-self: center
+  width: 100%;
+  height: auto;
+  align-self: center;
 }
-
 
 .thumbnail-box img {
-   
-   width: 200px;
-    /* mix-blend-mode: multiply; */
+  width: 200px;
   height: auto;
   display: block;
+
+  /* 💡 기본 테두리 세팅 (투명 상태) */
+  border: 3px solid transparent;
+  transition: all 0.3s ease; /* 호버 시 부드러운 전환 효과 */
 }
 
+/* 💡 마우스 호버 상태 */
+.thumbnail-box img:hover {
+  /* 사용 중이신 오렌지 레드(#F54927) 포인트 컬러를 활용한 그라데이션 예시 */
+  border-image: linear-gradient(135deg, #F54927, #FFFD03) 1;
+}
 
 body{
   font-family: "DM Mono", monospace;
