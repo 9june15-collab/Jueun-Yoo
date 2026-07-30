@@ -69,8 +69,8 @@ width: 100%;
 
 /* 💡 마우스 호버 상태 */
 .thumbnail-box img:hover {
-  /* 사용 중이신 오렌지 레드(#F54927) 포인트 컬러를 활용한 그라데이션 예시 */
-  border-image: linear-gradient(135deg, #F54927, #FFFD03) 1;
+ box-shadow: 0 0 25px 6px rgba(245, 73, 39, 0.7); /* 블러 크기(25px)와 퍼짐(6px)을 키워 더 진하게 번지게 함 */
+  transform: scale(1.02);
 }
 
 body{
