@@ -53,8 +53,8 @@ width: 100%;
 
 .thumbnail-box {   
  position: fixed;
-  right: 40px;     /* 오른쪽 벽에서 40px 떨어진 위치 */
-  top: 40px;    /* 💡 아래쪽에 고정하고 싶다면 bottom 사용 (위쪽 고정 시 top: 40px;) */
+  right: 20px;     /* 오른쪽 벽에서 40px 떨어진 위치 */
+  top: 20px;    /* 💡 아래쪽에 고정하고 싶다면 bottom 사용 (위쪽 고정 시 top: 40px;) */
   
   /* 기존 flex 관련 속성 해제 및 레이어 순서 지정 */
   width: auto;     /* 내용물 크기에 맞춤 */
