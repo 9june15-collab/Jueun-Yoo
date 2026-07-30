@@ -289,7 +289,7 @@ justify-content: center;
 }
 
 .detail-media img {
-    width: 80%;
+    width: 90%;
     height: auto;
     display: block;
 }
@@ -353,7 +353,7 @@ justify-content: center;
 }
 
 .sub-content .detail-media img {
-  width: 80%;
+  width: 90%;
     height: auto;
     display: block;
 /* 화면이 좁아지는 모바일 환경 분기 */
