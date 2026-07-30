@@ -66,8 +66,8 @@ position: absolute; /* 💡 부모 컨테이너를 기준으로 위치 잡기 */
 }
 
 .thumbnail-box img {
- width: auto;
-  height: 30%;
+ width: 200px;
+  height: auto;
   display: block;
   border-radius: 4px;
 }
