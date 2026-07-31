@@ -69,6 +69,7 @@ position: absolute; /* 💡 부모 컨테이너를 기준으로 위치 잡기 */
   height: auto;
   display: block;
   border-radius: 4px;
+      mix-blend-mode: multiply;
 }
 
 /* 💡 마우스 호버 상태 */
