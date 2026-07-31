@@ -74,12 +74,12 @@ position: static; /* 💡 부모 컨테이너를 기준으로 위치 잡기 */
 }
 
 body{
-   font-family: "Noto Sans", sans-serif;
+  font-family: "Sono", monospace;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-variation-settings:
-    "wdth" <width>;
+    "MONO" 1;
 /* Background-color: #FFFD03; */
     /* color: #F54927; */
     
