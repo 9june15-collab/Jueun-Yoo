@@ -50,11 +50,10 @@ width: 100%;
 
 
 .thumbnail-box {   
-position: relative; 
-  align-self: flex-end; /* 오른쪽 구석 정렬 */
-  margin-top: 20px;
-  width: auto;
-  height: auto;
+position: relative;
+  margin-top: 40px; /* absolute를 떼고 단순히 위 드롭다운과의 여백만 지정 */
+  float: right;     /* 필요 시 오른쪽 정렬을 float으로 유지 */
+  clear: both;
     
     padding-bottom: 20px;
   right: auto;        /* 기존 absolute 좌표 초기화 */
