@@ -55,8 +55,8 @@ width: 100%;
 
 .thumbnail-box {   
 position: absolute; /* 💡 부모 컨테이너를 기준으로 위치 잡기 */
-  right: 40px;        /* 오른쪽 벽에서 40px 띄움 */
-  top: 40px;          /* 컨테이너 맨 위에서 40px 띄움 (또는 bottom: 40px) */
+  right: 20px;        /* 오른쪽 벽에서 40px 띄움 */
+  top: 20px;          /* 컨테이너 맨 위에서 40px 띄움 (또는 bottom: 40px) */
   
   width: auto;
   height: auto;
