@@ -84,7 +84,7 @@ Background-color: #FFFD03;
     
 }
 
-p, h1, h2, h3, h4, h5, h6, li, summary {
+a, p, h1, h2, h3, h4, h5, h6, li, summary {
   max-width: 800px;  
   width: 100%;           /* 화면이 좁아지면 가변적으로 줄어듦 */
   word-break: keep-all;  /* 한글/단어 단위 깨짐 방지 */
