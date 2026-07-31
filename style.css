@@ -50,7 +50,7 @@ width: 100%;
 
 
 .thumbnail-box {   
-position: static; /* 💡 부모 컨테이너를 기준으로 위치 잡기 */
+position: absolute;
  right: 20px;     /* 오른쪽 벽에서 40px 떨어진 위치 */
   bottom: 20px;
   width: auto;
