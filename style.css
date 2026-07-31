@@ -12,7 +12,7 @@ width: 100%;
     position: relative;
     flex-direction: column;   /* 위에서 아래로 차곡차곡 배치 */        
      padding: 0 20px 20px;
-    padding-left: 40px;
+    padding-left: 20px;
       max-width: 1300px;
     margin: 0 auto;
 
@@ -84,7 +84,7 @@ body{
   line-height: 1.4;
     letter-spacing: -0.1px;
    font-size: 15px;
-/* Background-color: #FFFD03; */
+Background-color: #FFFD03;
     
 }
 p{
