@@ -51,8 +51,8 @@ width: 100%;
 
 .thumbnail-box {   
 position: static; /* 💡 부모 컨테이너를 기준으로 위치 잡기 */
-
-  
+ right: 20px;     /* 오른쪽 벽에서 40px 떨어진 위치 */
+  bottom: 20px;
   width: auto;
   height: auto;
   z-index: 10;        /* 텍스트 위에 떠있도록 레이어 지정 */
@@ -61,6 +61,7 @@ position: static; /* 💡 부모 컨테이너를 기준으로 위치 잡기 */
 
 .thumbnail-box img {
  width: 200px;
+
   height: auto;
   display: block;
   border-radius: 4px;
