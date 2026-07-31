@@ -84,7 +84,7 @@ body{
   line-height: 1.4;
     letter-spacing: -0.1px;
    font-size: 15px;
-Background-color: #FFFD03;
+/* Background-color: #FFFD03; */
     
 }
 p{
@@ -94,7 +94,7 @@ p{
   width: 100%;
     font-size: 0.85rem;
     line-height: 1.4;
- color: #F54927;
+ /* color: #F54927; */
 }
 
 h2{
