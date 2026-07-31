@@ -57,6 +57,7 @@ position: absolute;
   height: auto;
   z-index: 10;        /* 텍스트 위에 떠있도록 레이어 지정 */
   pointer-events: auto;
+     mix-blend-mode: multiply;
 }
 
 .thumbnail-box img {
@@ -65,7 +66,7 @@ position: absolute;
   height: auto;
   display: block;
   border-radius: 4px;
-      mix-blend-mode: multiply;
+     
 }
 
 /* 💡 마우스 호버 상태 */
