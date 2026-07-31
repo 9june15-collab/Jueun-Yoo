@@ -74,32 +74,17 @@ position: static; /* 💡 부모 컨테이너를 기준으로 위치 잡기 */
 }
 
 body{
-  font-family: "DM Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.4;
-    letter-spacing: -0.1px;
-   font-size: 15px;
-/* Background-color: #FFFD03; */
-    
-}
-p{
- font-family: "Noto Sans", sans-serif;
+   font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-variation-settings:
     "wdth" <width>;
- /* color: #F54927; */
+/* Background-color: #FFFD03; */
+    /* color: #F54927; */
+    
 }
 
-h2{
-  font-family: "DM Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.7;
-font-size: 20px;
-}
 p, h1, h2, h3, h4, h5, h6, li, summary {
   max-width: 800px;  
   width: 100%;           /* 화면이 좁아지면 가변적으로 줄어듦 */
