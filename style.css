@@ -12,14 +12,14 @@ width: 100%;
     position: relative;
     flex-direction: column;   /* 위에서 아래로 차곡차곡 배치 */        
      padding: 0 20px 20px;
-    padding-left: 20px;
+    padding-left: 10px;
       max-width: 1300px;
     margin: 0 auto;
 
 }
 .container_archive {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1410px;
   margin: 0 auto;               /* 💡 margin: 0 auto 대신 margin: 0 으로 설정하여 좌측 정렬 */
   padding: 0 40px;
   min-height: auto;
