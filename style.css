@@ -103,6 +103,16 @@ color: #F54927;
    grid-column: 2/span 3; 
     grid-row: 1;
 }
+.full-width-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  
+  /* 위아래 간격만 지정 */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 /* 2차 수정본(상세페이지)*/
 
