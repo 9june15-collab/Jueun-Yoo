@@ -24,7 +24,6 @@ width: 100%;
   padding: 0 40px;
     padding-left: 20px;
   min-height: auto;
-   
 }
 
 .header_text{
@@ -55,13 +54,17 @@ position: relative;
   margin-top: 20px;
   width: auto;
   height: auto;
+    
+    padding-bottom: 20px;
+  right: auto;        /* 기존 absolute 좌표 초기화 */
+  bottom: auto;
   z-index: 10;        /* 텍스트 위에 떠있도록 레이어 지정 */
   pointer-events: auto;
      mix-blend-mode: multiply;
 }
 
 .thumbnail-box img {
- width: 60px;
+ width: 100px;
 
   height: auto;
   display: block;
@@ -69,7 +72,7 @@ position: relative;
      
 }
 
-/* 💡 마우스 호버 상태 */
+/* 마우스 호버 상태 */
 .thumbnail-box img:hover {
  box-shadow: 0 0 25px 6px rgba(245, 73, 39, 0.7); /* 블러 크기(25px)와 퍼짐(6px)을 키워 더 진하게 번지게 함 */
   transform: scale(1.02);
