@@ -212,24 +212,14 @@ p, h1, h2, h3, h4, h5, h6, li, summary {
   padding: 20px 0;
   /* margin-top: 20px; */
 }
-.project-title::before {
-  content: "★";          /* 💡 닫힘 상태 기호 (예: '▶', '▶ ', '▸', '+' 등) */
-  display: inline-block;
-  margin-right: 8px;     /* 오른쪽 텍스트와의 간격 */
-  font-size: 2em;      /* 텍스트 크기에 맞춰 살짝 조정 */
-  transition: transform 0.2s ease; /* 회전 애니메이션용 (선택 사항) */
-}
+
 summary {
   list-style: none;
 }
 summary::-webkit-details-marker {
   display: none;
 }
-/* 3. 드롭다운이 열렸을 때(open): 아래 방향 삼각형으로 변경 */
-.project-dropdown[open] .project-title::before {
-  content: "≠";          /* 💡 열림 상태 기호 (예: '▼', '▾', '−' 등) */
-font-size: 0.8em;  
-}
+
 .hero-media {
   width: 100%;
   position: static; /* sticky가 아니므로 스크롤을 따라 위로 올라감 */
