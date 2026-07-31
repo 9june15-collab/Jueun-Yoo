@@ -260,7 +260,6 @@ justify-content: center;
   /* top: 30px; /* 💡 finder-nav(60px) + project-title 높이(~35px) 바로 아래 */ */
   z-index: 80;
   padding: 12px 0;
-  border-bottom: 1px solid #000;
     
 }
 
