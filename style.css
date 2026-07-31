@@ -208,6 +208,17 @@ summary::-webkit-details-marker {
   object-fit: cover;  /* 비율 유지 */
   display: block;
 }
+.hero-media2 {
+  width: 100%;
+  position: static; /* sticky가 아니므로 스크롤을 따라 위로 올라감 */
+}
+
+.hero-media2 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;  /* 비율 유지 */
+  display: block;
+}
 /* 2. 각 드롭다운 기본 상태 (닫혔을 때 - 1칸 차지) */
 .project-dropdown {
 justify-content: center;
