@@ -70,14 +70,20 @@ line-height: 1.2;
 }
 
 a, p, h1, h2, h3, h4, h5, h6, li, summary {
-  max-width: 800px;  
-  width: 100%;           /* 화면이 좁아지면 가변적으로 줄어듦 */
-  word-break: keep-all;  /* 한글/단어 단위 깨짐 방지 */
-  overflow-wrap: break-word; /* 너무 긴 단어/URL이 들어올 때 박스를 뚫고 나가지 않도록 방지 */
-    transform: scaleY(1.2);
-color: #F54927;
+ max-width: 800px;  
+  width: 100%;  
+  word-break: keep-all;  
+  overflow-wrap: break-word; 
+  /* color: #F54927; */
+  font-size: 18px;
 
-    font-size: 18px;
+  /* --- [변형 및 잘림 방지 보정] --- */
+  display: inline-block;          /* transform 속성을 안정적으로 받도록 설정 */
+  transform: scaleY(1.2);        /* Y축 1.2배 확대 */
+  transform-origin: top left;     /* 위쪽/왼쪽 기준으로 늘어나게 하여 상단 잘림 방지 */
+  
+  line-height: 1.2;              /* Y축으로 늘어난 만큼 행간을 넓혀 앞/위 텍스트와 겹침 방지 */
+  margin-bottom: 0.3em;
 }
 /* 2차 수정본(상세페이지)*/
 
