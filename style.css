@@ -62,7 +62,6 @@ body{
   font-style: normal;
 letter-spacing: -0.3px;
 line-height: 1.2;
-    display: inline-block; /* transform 적용을 위해 블록 또는 인라인-블록으로 설정 */
   transform: scaleY(1.2);
 /* Background-color: #FFFD03; */
     /* color: #F54927; */
