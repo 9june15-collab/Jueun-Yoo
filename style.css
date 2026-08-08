@@ -128,8 +128,8 @@ color: #F54927;
 .dropdown-content {
     display: flex;
   flex-direction: column; /* 위에서 아래로 배치 */
-  gap: 20px;
-  padding: 20px 0;
+  gap: 30px;
+  padding: 10px 0;
   /* margin-top: 30px; */
 }
 details[open] > summary::before {
@@ -215,7 +215,7 @@ justify-content: center;
 }
 
 .detail-media img {
-    width: 90%;
+    width: 75%;
     height: auto;
     display: block;
 }
