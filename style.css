@@ -8,7 +8,7 @@
 width: 100%;
     
     /* 자식 요소들을 무조건 가로 중앙 정렬시키는 Flex 세팅 */
-    display: inline-block; 
+    display: flex; 
     position: relative;
     flex-direction: column;   /* 위에서 아래로 차곡차곡 배치 */        
      padding: 0 80px 20px;
@@ -74,9 +74,10 @@ a, p, h1, h2, h3, h4, h5, h6, li, summary {
   width: 100%;           /* 화면이 좁아지면 가변적으로 줄어듦 */
   word-break: keep-all;  /* 한글/단어 단위 깨짐 방지 */
   overflow-wrap: break-word; /* 너무 긴 단어/URL이 들어올 때 박스를 뚫고 나가지 않도록 방지 */
+    transform: scaleY(1.2);
 color: #F54927;
 
-    font-size: 20px;
+    font-size: 18px;
 }
 /* 2차 수정본(상세페이지)*/
 
