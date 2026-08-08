@@ -175,7 +175,7 @@ justify-content: center;
 /* 열린 상태의 링크 강조 */
 .project-item[open] .project-title {
    position: sticky;
-  /* top: 60px; /* finder-nav 바로 아래에 착 붙는 위치 */ */
+  /* top: 60px; */
   z-index: 90;
 
   list-style: none;
