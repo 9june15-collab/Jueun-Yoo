@@ -75,7 +75,7 @@ a, p, h1, h2, h3, h4, h5, h6, li, summary {
   overflow-wrap: break-word; /* 너무 긴 단어/URL이 들어올 때 박스를 뚫고 나가지 않도록 방지 */
 color: #F54927;
 
-    font-size: 18px;
+    font-size: 24px;
 }
 /* 2차 수정본(상세페이지)*/
 
