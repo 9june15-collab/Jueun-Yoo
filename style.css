@@ -78,8 +78,6 @@ color: #F54927;
 }
 /* 2차 수정본(상세페이지)*/
 
-}
-
 .project-item {
     position: relative;
     cursor: pointer;
@@ -174,10 +172,6 @@ justify-content: center;
   width: 100%;
 }
 
-/* 💡 핵심: 3. 드롭다운이 열렸을 때 (open) -> 전체 4열을 다 차지하도록 확장 */
-.project-dropdown[open] {
-  grid-column: 1 / -1; /* 첫 번째 컬럼부터 끝까지 (4컬럼 전체 너비 차지) */
-}
 /* 열린 상태의 링크 강조 */
 .project-item[open] .project-title {
    position: sticky;
