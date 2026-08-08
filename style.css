@@ -60,7 +60,7 @@ body{
   font-weight: 400;
   font-style: normal;
 letter-spacing: -0.3px;
-line-height: 1.5;
+line-height: 1.6;
 /* Background-color: #FFFD03; */
     color: #F54927;
     padding-top:20px;
@@ -74,7 +74,7 @@ a, p, h1, h2, h3, h4, h5, h6, li, summary {
   overflow-wrap: break-word; /* 너무 긴 단어/URL이 들어올 때 박스를 뚫고 나가지 않도록 방지 */
 color: #F54927;
 
-    font-size: 16px;
+    font-size: 18px;
 }
 /* 2차 수정본(상세페이지)*/
 
@@ -89,7 +89,7 @@ color: #F54927;
  position: static;
   z-index: 90;
   color: #F54927;
-  font-size: 24px;
+  font-size: 18px;
   padding: 4px 0;
   cursor: pointer;
     /* padding-top: 20px; */
