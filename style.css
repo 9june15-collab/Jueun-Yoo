@@ -43,6 +43,7 @@ position: fixed;
     min-width: 300px;
     align-item: right;
   z-index: 10;        /* 텍스트 위에 떠있도록 레이어 지정 */
+     mix-blend-mode: multiply;
 }
 
 .sticky-text {
@@ -60,7 +61,7 @@ position: fixed;
 
   height: auto;
   display: block;
-    mix-blend-mode: multiply;
+   
      
 }
 
