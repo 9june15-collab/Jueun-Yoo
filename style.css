@@ -33,6 +33,7 @@ position: relative;
   clear: both;
     
     padding-bottom: 20px;
+    padding-right: 20px;
   right: auto;        /* 기존 absolute 좌표 초기화 */
   bottom: auto;
   z-index: 10;        /* 텍스트 위에 떠있도록 레이어 지정 */
