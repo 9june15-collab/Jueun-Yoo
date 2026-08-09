@@ -100,7 +100,7 @@ line-height: 1.5;
   z-index: 90;
   /* color: #FF3E12; */
   font-size: 14px;
-  padding: 4px 0;
+  padding: 20px 0;
   cursor: pointer;
     /* padding-top: 20px; */
     
@@ -112,13 +112,6 @@ line-height: 1.5;
 
 .project-title:hover {
     text-decoration: underline;
-}
-
-
-/* [오른쪽] 상세 패널 영역 */
-.detail-panel-area {
-    width: 45%;
-    position: relative;
 }
 
 .empty-state {
