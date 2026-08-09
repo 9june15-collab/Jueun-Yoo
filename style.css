@@ -6,17 +6,15 @@
 
 .container {
 width: 100%;
-    
-    /* 자식 요소들을 무조건 가로 중앙 정렬시키는 Flex 세팅 */
+
   margin: 0 auto;
-  position: relative;
-  
+
   display: flex;
   flex-direction: column;
   
   /* 1. Flexbox 자식 요소들(박스 자체)을 가로 가운데로 배치 */
   align-items: left;      
-     padding: 0 10px 20px;
+     paddin-top: 10px;
     padding-left: 10px;
       max-width: 1300px;
     margin: auto;
