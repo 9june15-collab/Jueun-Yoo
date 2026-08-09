@@ -52,7 +52,7 @@ position: fixed;
     font-size: 22px;
   z-index: 100;       /* 스크롤 시 다른 텍스트나 이미지 위로 오도록 설정 */
   color: #F54927;
-     align-items: center;
+     align-items: right;
   /* [선택] 배경색을 주어 뒤에 지나가는 콘텐츠가 비치지 않게 보정 */
 }
 
