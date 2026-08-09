@@ -43,11 +43,17 @@ text-align: left;
  font-size: 24px;
     text-align: center;
     align-item: center;
-  
-  /* [선택] 배경색을 주어 뒤에 지나가는 콘텐츠가 비치지 않게 보정 */
-  background-color: transparent; 
 }
 
+.sticky-text2 {
+  position: sticky;
+  top: 20px;          /* 화면 상단에서 20px 위치에 스크롤이 도달하면 고정됨 (필수) */
+  z-index: 100;       /* 스크롤 시 다른 텍스트나 이미지 위로 오도록 설정 */
+ font-size: 24px;
+    text-align: right;
+    align-item: right;
+ 
+}
 .thumbnail-box {   
 position: absolute; /* container 내부 자유로운 위치에 배치 */
   
