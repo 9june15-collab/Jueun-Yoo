@@ -332,6 +332,6 @@ justify-content: center;
     }
 
     body, summary, p {
-    font-weight: 500; /* 모바일에서만 한 단계 두껍게 */
+    font-weight: 400;
   }
 }
