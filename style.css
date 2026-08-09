@@ -68,7 +68,7 @@ body{
 
  font-family: "Instrument Serif", serif;
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
 letter-spacing: -0.3px;
 line-height: 1.5;
   
@@ -85,7 +85,7 @@ line-height: 1.5;
   overflow-wrap: break-word; /* 너무 긴 단어/URL이 들어올 때 박스를 뚫고 나가지 않도록 방지 */
 /* color: #FF3E12; */
 
-    font-size: 20px;
+    font-size: 24px;
 } 
 
 /* 2차 수정본(상세페이지)*/
