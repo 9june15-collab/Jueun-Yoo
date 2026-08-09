@@ -36,20 +36,13 @@ text-align: left;
 }
 .thumbnail-box {   
 position: fixed;
-  
-  /* 화면 우측 및 하단(또는 상단) 위치 지정 */
-  right: 40px;          /* 오른쪽 벽에서 40px 떨어진 위치 */
-  bottom: 40px;         /* 화면 아래에서 40px 떨어진 위치 (상단 고정을 원하면 top: 40px; 로 변경) */
-  
-  /* 순서 및 플로팅 리셋 */
-  float: none;
-  margin-top: 0;
+ 
     width: 90%;
     min-width: 300px;
     align-item: right;
   z-index: 10;        /* 텍스트 위에 떠있도록 레이어 지정 */
-  pointer-events: auto;
 }
+
 .sticky-text {
   position: sticky;
   top: 20px;          /* 화면 상단에서 20px 위치에 스크롤이 도달하면 고정됨 (필수) */
