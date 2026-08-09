@@ -165,6 +165,9 @@ summary::-webkit-details-marker {
 summary {
   list-style: none;
 }
+details[open] summary::before {
+  color: transparent;
+}
 
 details[open] summary .project-title,
 details[open] summary {
