@@ -65,7 +65,7 @@ letter-spacing: -0.3px;
 line-height: 1.5;
   
 Background-color: #FFFD03;
-    color: #231FFF;
+    color: #FF3E12;
     padding-top:20px;
     
 }
@@ -75,7 +75,7 @@ Background-color: #FFFD03;
   width: 100%;           /* 화면이 좁아지면 가변적으로 줄어듦 */
   word-break: keep-all;  /* 한글/단어 단위 깨짐 방지 */
   overflow-wrap: break-word; /* 너무 긴 단어/URL이 들어올 때 박스를 뚫고 나가지 않도록 방지 */
-color: #231FFF;
+color: #FF3E12;
 
     font-size: 14px;
 } 
