@@ -1,317 +1,306 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-width: 100%;
-    
-    /* 자식 요소들을 무조건 가로 중앙 정렬시키는 Flex 세팅 */
-  margin: 0 auto;
-  position: relative;
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jueun Yoo</title>
+   
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Instrument+Serif:ital@0;1&family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      
+  <br>
   
-  display: flex;
-  flex-direction: column;
+  <div class="container_archive">
+    <p class="sticky-text"><a href="about.html">jueun yoo</a></p>
+      <br>
+      <!-- 프로젝트 2: MindTheGap -->
+        <details class="project-dropdown" open>
+          <summary class="dropdown-header">
+            <span class="project-title">MindtheGap</span>
+          </summary>
+
+          <!-- 드롭다운으로 아래에 펼쳐지는 내용 -->
+          <div class="dropdown-content">
+            <div class="hero-media">
+      <img src="images/Mtg_hero.png" alt="Main Hero Image">
+    </div>
+            <div class="project-info">
+              <p id="detailDescription"> MindTheGap is a visual discourse on personal space within public transportation. 
+              We all pay fares for access to public transportation services. Paying creates illusion that we can buy ourselves a certain amount of personal space within the confines of subways, trains, and buses. In reality, we have all sat or stood in overly crowded compartments gasping air, or noticed fellow passengers' belongings taking up extra seats. </p>
+            </div>
+ 
+            <div class="detail-media">
+            
+          <img src="images/Mindthegap.JPG">
+              <img src="images/Mtg_proto.png">
+              <img src="images/Mtg2.jpg">
+              <img src="images/Mtg3.jpg">
+              <img src="images/Mtg_photo.jpg">
+              <img src="images/Mtg_exhibition.png">
+              <img src="gifs/Mtg_booklet.gif">
+            </div>
+          </div>
+        </details>
+
+    <!-- 프로젝트 1: the Fillet and the Fish -->
+          <details class="project-dropdown" open>
+          <summary class="dropdown-header">
+            <span class="project-title">the Filet and the Fish</span>
+          </summary>
+
+          <!-- 드롭다운으로 아래에 펼쳐지는 내용 -->
+          <div class="dropdown-content">
+            <div class="hero-media">
+      <img src="images/macks.jpg" alt="Main Hero Image">
+    </div>
+            <div class="project-info">
+              <p id="detailDescription">Mackerel is one of the most widely distributed migratory fish around the world. This property lead to let it symbolize the working class and its endurance, at the same time produced folk etymology about pimping and concept of deception by its flashy looking and quick spoiling tendency. </p>
+            </div>
+      
+            
+            <div class="detail-media">
+              <img src="gifs/mackerel1.gif">
+          <img src="images/zine_pg2.png">
+          <img src="images/zine_pg3.png">
+          <img src="images/zine_pg4.png">
+          <img src="images/zine_pg5.png">
+          <img src="images/zine_pg6.png">
+             <img src="images/mackerel zine.png">
+              <img src="images/mackerel-zine.png">
+            </div>
+          </div>
+        </details>
+    
+      <!-- 프로젝트 2: ANNND -->
+        <details class="project-dropdown" open>
+          <summary class="dropdown-header">
+            <span class="project-title">ANNND</span>
+          </summary>
+
+          <div class="dropdown-content">
+            
+            <div class="project-info">
+                <div class="hero-media">
+      <img src="images/ANNND_poster.jpg" alt="Main Hero Image">
+    </div>
+              <p id="detailDescription">ANNND is a knit-textile-based fashion brand co-created with two classmates through a cross-disciplinary PBL course that combined Visual Communication Design and Textile Fashion Design. Drawing inspiration from the endlessly extendable and connective nature of letterforms, ANNND translates this playful quality into fashion and knit textiles as physical extensions of the body. Stretch beyond the ordinary—discover joy in spaces that can only be reached through imagination. </p>
+            </div>
+
+            <div class="detail-media">
+            
+            <img src="images/ANNND.jpg">
+          <img src="images/ANNND_muffler.png">
+              <img src="images/ANNND_poster.jpg">
+              <img src="images/ANNND_vector.png">
+              <img src="images/ANNND_upper.png">
+          <img src="images/ANNND_thumb.jpg">
+              <img src="gifs/annnd.gif">
+              
+            </div>
+          </div>
+        </details>
+
   
-  /* 1. Flexbox 자식 요소들(박스 자체)을 가로 가운데로 배치 */
-  align-items: center;      
-     padding: 0 50px 20px;
-    padding-left: 10px;
-      max-width: 1300px;
-    margin: auto;
-text-align: left;
-
-}
-.container_archive {
-  width: 100%;
-  max-width: 1410px;
-  margin: 0 auto;               /* 💡 margin: 0 auto 대신 margin: 0 으로 설정하여 좌측 정렬 */
-  /* padding: 0 10px; */
-    padding-left: 32px;
-    padding-bottom: 20px;
-      align-items: center;
-  min-height: auto;
-}
-.thumbnail-box {   
-position: relative;
-  margin-top: 40px; /* absolute를 떼고 단순히 위 드롭다운과의 여백만 지정 */
-  float: right;     /* 필요 시 오른쪽 정렬을 float으로 유지 */
-  clear: both;
-    width: 33%;
-    min-width: 300px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-  right: auto;        /* 기존 absolute 좌표 초기화 */
-  bottom: auto;
-  z-index: 10;        /* 텍스트 위에 떠있도록 레이어 지정 */
-  pointer-events: auto;
-}
-
-.thumbnail-box img {
- width: 150px;
-
-  height: auto;
-  display: block;
-     
-}
-
-/* 마우스 호버 상태 */
-.thumbnail-box img:hover {
- box-shadow: 0 0 25px 6px rgba(35, 31, 255, 0.7); /* 블러 크기(25px)와 퍼짐(6px)을 키워 더 진하게 번지게 함 */
-  transform: scale(1.02);
-}
-
-body{
-
- font-family: "DM Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
-letter-spacing: -0.3px;
-line-height: 1.5;
-  
-/* Background-color: #FFFD03; */
-    color: #FF3E12;
-    padding-top:20px;
     
-}
-
- a, p, h1, h2, h3, h4, h5, h6, li, summary {
-  max-width: 800px;  
-  width: 100%;           /* 화면이 좁아지면 가변적으로 줄어듦 */
-  word-break: keep-all;  /* 한글/단어 단위 깨짐 방지 */
-  overflow-wrap: break-word; /* 너무 긴 단어/URL이 들어올 때 박스를 뚫고 나가지 않도록 방지 */
-color: #FF3E12;
-
-    font-size: 14px;
-} 
-
-/* 2차 수정본(상세페이지)*/
-
-.project-item {
-    position: relative;
-    cursor: pointer;
-}
-
-.project-title {
- position: static;
-  z-index: 90;
-  color: #FF3E12;
-  font-size: 14px;
-  padding: 4px 0;
-  cursor: pointer;
-    /* padding-top: 20px; */
+     <!-- 프로젝트 1: EverywhereHanger -->
     
-}
+          <details class="project-dropdown">
+          <summary class="dropdown-header">
+            <span class="project-title">Everywhere Hanger</span>
+          </summary>
 
-.project-title::-webkit-details-marker {
-    display: none; /* 브라우저 기본 화살표 숨김 */
-}
+          <!-- 드롭다운으로 아래에 펼쳐지는 내용 -->
+          <div class="dropdown-content">
+            <div class="project-info">
+              <p id="detailDescription">Everywhere Hanger is a temporary hanger for clothing, for house and office. With a simple action, it can be applied to any flat board within 2cm. It features to be produced multiply, by the tool I designed by myself. Hanger everywhere, Everywhere Hanger.</p>
+            </div>
 
-.project-title:hover {
-    text-decoration: underline;
-}
-
-
-/* [오른쪽] 상세 패널 영역 */
-.detail-panel-area {
-    width: 45%;
-    position: relative;
-}
-
-.empty-state {
-    padding: 40px;
-    color: #999;
-    font-size: 0.85rem;
-}
-.dropdown-thumbnail{
-    width: 30%;            /* 썸네일 가로 크기 */
-  height: auto;           /* 썸네일 세로 크기 */
-    min-width: 300px;
-  object-fit: cover;      /* 이미지 비율 유지하며 채우기 */
-  flex-shrink: 0;         /* 공간 부족해도 썸네일 크기 유지 */
-  transition: transform 0.2s ease;
-}
-/* 💡 핵심: 드롭다운이 열렸을 때 (왼쪽 텍스트 : 오른쪽 이미지 2열) */
-.dropdown-content {
-    display: flex;
-  flex-direction: column; /* 위에서 아래로 배치 */
-  gap: 30px;
-  padding: 10px 0;
-  /* margin-top: 30px; */
-}
-details[open] > summary::before {
-  content: "𖭅"; /* 💡 펼쳐졌을 때 바뀔 기호 (또는 회전효과) */
-font-size: 0.8em;
-    font-weight: bold;
-}
-
-summary {
-  list-style: none;
-}
-summary::-webkit-details-marker {
-  display: none;
-}
-
-.hero-media {
-  width: 100%;
-  position: static; /* sticky가 아니므로 스크롤을 따라 위로 올라감 */
-}
-
-.hero-media img {
-  width: 100%;
-  height: auto;
-  max-height: 600px;  /* 필요 시 최대 높이 제한 (생략 가능) */
-  object-fit: cover;  /* 비율 유지 */
-  display: block;
-}
-.hero-media2 {
-  width: 100%;
-  position: static; /* sticky가 아니므로 스크롤을 따라 위로 올라감 */
-}
-
-.hero-media2 img {
-  width: 80%;
-  height: auto;
-  object-fit: cover;  /* 비율 유지 */
-  display: block;
-}
-/* 2. 각 드롭다운 기본 상태 (닫혔을 때 - 1칸 차지) */
-.project-dropdown {
-justify-content: center;
-  width: 100%;
-}
-
-/* 열린 상태의 링크 강조 */
-.project-item[open] .project-title {
-   position: sticky;
-  /* top: 60px; */
-  z-index: 90;
-
-  list-style: none;
-  padding-top: 10px;
-}
-.project-dropdown[open] .dropdown-thumbnail {
-  display: none;
-}
-/* 왼쪽 텍스트 정보 */
-.project-info {
-   position: static;
-  /* top: 30px;*/
-  z-index: 80;
-  /* padding: 12px 0; */
+            <div class="detail-media">
+            
+          <img src="images/everywhere hanger.png">
+          <img src="images/hanger.jpg">
+              <img src="images/hanger2.jpg">
+              <img src="images/hanger3.png">
+              
+            </div>
+            <div class="hero-media2">
+                <a href="https://vimeo.com/1214545983?share=copy">making of Everywhere Hanger</a>
+              <img src="images/hanger_tool.png" style="width: 100%; height: auto;">
+              </div>
+          </div>
+        </details>
+          
+            
     
-}
+                  <!-- 프로젝트 2: WOW -->
+        <details class="project-dropdown">
+          <summary class="dropdown-header">
+            <span class="project-title">Magazine WOW</span>
+          </summary>
 
-.project-info p {
-    font-size: 14px;
-  line-height: 1.5;
-  white-space: pre-line;
-}
+          <!-- 드롭다운으로 아래에 펼쳐지는 내용 -->
+          <div class="dropdown-content">
+            
 
-/* 오른쪽 이미지 미디어 (2열 균등 배치) */
-.detail-media {
-    display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  width: 100%;
-}
+            <div class="detail-media">
+          <img src="images/WOW.png">
+          </div>
+            <div class="project-info">
+              <p id="detailDescription">WOW” is a quarterly school magazine published twice a year—in spring and fall—by the Hongik University Editorial Committee, starting from its first issue in 1951. Each issue of “WOW” features in-depth coverage of a wide range of topics and presents various experimental visual designs that reflect the chosen themes.</p>
+            </div>
+            <div class="sub-dropdown-group">
+              
+            <!-- 2단계: 하위 드롭다운 82 -->
+      <details class="sub-dropdown" open>
+        <summary class="sub-header">
+          <span>WOW 82</span>
+        </summary>
+        <div class="sub-content">
+          <div class="detail-media">  
+            <!-- <img src="images/WOW_82.png"> -->
+            <img src="images/WOW_82_cover.png">
+            <img src="images/WOW_82_1.png">
+             <img src="images/WOW_82_sticker.png">
+          </div>
+        </div>
+      </details>
 
-.detail-media img {
-    width: 75%;
-    height: auto;
-    display: block;
-}
-/* 하위 드롭다운 */
+                   <!-- 2단계: 하위 드롭다운 83 -->
+      <details class="sub-dropdown" open>
+        <summary class="sub-header">
+          <span>WOW 83</span>
+        </summary>
+        <div class="sub-content">
+          <div class="detail-media">  
+            <!-- <img src="images/WOW_83.png"> -->
+            <img src="images/WOW_83_1.png">
+          </div>
+        </div>
+      </details>
 
-.sub-dropdown-group {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  width: 100%;
-}
+                          <!-- 2단계: 하위 드롭다운 84 -->
+      <details class="sub-dropdown" open>
+        <summary class="sub-header">
+          <span>WOW 84</span>
+        </summary>
+        <div class="sub-content">
+          <div class="detail-media">  
+            <!-- <img src="images/WOW_84.png">  -->
+            <img src="images/WOW_84_1.png">
+            <img src="images/WOW_84_bandaid.png">
+            <img src="images/WOW_84_tincase.png">
+          </div>
+        </div>
+      </details>
 
-/* 서브 드롭다운 아이템 */
-.sub-dropdown {
-  width: 100%;
-}
+                          <!-- 2단계: 하위 드롭다운 85 -->
+      <details class="sub-dropdown" open>
+        <summary class="sub-header">
+          <span>WOW 85</span>
+        </summary>
+        <div class="sub-content">
+          <div class="detail-media">  
+            <!-- <img src="images/WOW_85.png"> -->
+            <img src="images/WOW_85_1.png">
+          </div>
+        </div>
+      </details>
+   
+            </div>
+        </details>
 
-.sub-dropdown[open] {
-}
+            <!-- 프로젝트 2: Figma-->
+        <details class="project-dropdown">
+          <summary class="dropdown-header">
+            <span class="project-title">Furnished by Figma</span>
+          </summary>
 
-/* 서브 드롭다운 타이틀 바 */
-.sub-header {
-  position: static;
-  z-index: 90;
-  color: #FF3E12;
-  font-size: 14px;
-  padding: 4px 0;
-  cursor: pointer;
-}
-.sub-header:hover{
-    
-    color: #F54927;
-    text-decoration: underline;
-}
+          <!-- 드롭다운으로 아래에 펼쳐지는 내용 -->
+          <div class="dropdown-content">
+            <div class="project-info">
+              <p id="detailDescription">How is Figma becoming new, governing standard of UX/UI design platform? As a design platform, Figma not only mediates people in remote places, but the guideline of collaboration, working process, readability rules, and even technical restrictions from display company. So I designed a workshop for learning Figma in alternative way. I first asked someone who has no idea of how UI/UX is made to draw the interface they use. And I brought those drawing to a group of people who can design and asked them to make things about interface at Figma. This installation shows the whole process of the research and executions, revealing myself as a moving cursor. </p>
+            </div>
+
+            <div class="detail-media">
+          <img src="images/figma.png">
+              <img src="gifs/figma.gif">
+            </div>
+          </div>
+        </details>
+          
+           <!-- 프로젝트 2: Fair Isle Impromptu -->
+        <details class="project-dropdown">
+          <summary class="dropdown-header">
+            <span class="project-title">Fair Isle Impromptu</span>
+          </summary>
+
+          <!-- 드롭다운으로 아래에 펼쳐지는 내용 -->
+          <div class="dropdown-content">
+            <div class="project-info">
+              <p id="detailDescription">How much does temporal order govern the surface of a graphic? The knitting machine follows the holes of a punch card, producing patterns in strict sequence. Fair Isle Impromptu is sometimes bound by this rigid sense of time—and sometimes breaks free from it. Reverse play, repetition, omission—these are the language of time. The impromptu is composed in real time and translated into graphic form.
+Eventually, the impromptu folds in zigzags and becomes a book. The emergence of pages leads to the emergence of temporality. Let’s unfold the impromptu once more. Fair Isle Impromptu is reinterpreted through the curves of the body.</p>
+            </div>
+
+            <div class="detail-media">
+            
+          <img src="images/f-impromptu.jpg">
+          <img src="images/f-impromptu_wearing.png">
+              <img src="images/F-imp_frags.png">
+            </div>
+          </div>
+        </details>
+
+              <!-- 프로젝트 2: Special Lecture Poster-->
+        <details class="project-dropdown">
+          <summary class="dropdown-header">
+            <span class="project-title">Poster for Special Lecture</span>
+          </summary>
+
+          <!-- 드롭다운으로 아래에 펼쳐지는 내용 -->
+          <div class="dropdown-content">
+            <div class="project-info">
+              <p id="detailDescription">Poster for special lecture of OJOS & POT, 2024</p>
+            </div>
+
+            <div class="detail-media">
+            
+          <img src="images/poster.jpg">
+              <img src="gifs/poster.gif">
+            </div>
+          </div>
+        </details>
+          
+            <!-- 프로젝트 2: CuppingT -->
+        <details class="project-dropdown">
+          <summary class="dropdown-header">
+            <span class="project-title">Cupping T</span>
+          </summary>
+
+          <!-- 드롭다운으로 아래에 펼쳐지는 내용 -->
+          <div class="dropdown-content">
+            <div class="project-info">
+              <p id="detailDescription">Project outcome for Communication Design(1), Hongik University. Beauty can come from the strangest of places, even the most disgusting of places. It’s the ugly things I notice more, because other people tend to ignore the ugly things. 
+              
+                (Redesigned in 2026)</p>
+            </div>
+
+            <div class="detail-media">
+            
+          <img src="images/cupping.png">
+          <img src="images/Cupping2024.jpeg">
+            </div>
+          </div>
+        </details>
+      </main>
+
     
 
-.sub-header::-webkit-details-marker {
-  display: none;
-}
+</div>
+   
 
-/* 서브 열렸을 때 아이콘 변경 */
-.sub-dropdown[open] .sub-icon::before {
-  content: "−";
-}
-
-/* 서브 드롭다운 내부 펼침 콘텐츠 */
-.sub-content {
-  padding: 16px;
-}
-
-/* 이미지 미디어 그리드는 기존 2열 유지 */
-.sub-content .detail-media {
-      display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  width: 100%;
-}
-
-.sub-content .detail-media img {
-  width: 90%;
-    height: auto;
-    display: block;}
-.full-width-image {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  
-  /* 위아래 간격만 지정 */
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-/* 화면이 좁아지는 모바일 환경 분기 */
-@media (max-width: 768px) {
-    .container_archive {
-        padding: 0 20px 40px 20px;
-    }
-    
-    .dropdown-content {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .detail-media {
-        grid-template-columns: 1fr;
-    }
-    
-    .project-info {
-        position: static;
-    }
-
-    body, summary, p {
-    font-weight: 500; /* 모바일에서만 한 단계 두껍게 */
-  }
-}
+</body>
+</html>
