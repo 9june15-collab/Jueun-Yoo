@@ -38,7 +38,7 @@ position: relative;
   float: right;     /* 필요 시 오른쪽 정렬을 float으로 유지 */
   clear: both;
     width: 33%;
-    min-width: 300pxl;
+    min-width: 300px;
     padding-bottom: 20px;
     padding-right: 20px;
   right: auto;        /* 기존 absolute 좌표 초기화 */
