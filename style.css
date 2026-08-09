@@ -36,14 +36,10 @@ text-align: left;
 .thumbnail-box {   
 position: relative;
   margin-top: 40px; /* absolute를 떼고 단순히 위 드롭다운과의 여백만 지정 */
-  float: right;     /* 필요 시 오른쪽 정렬을 float으로 유지 */
   clear: both;
     width: 33%;
     min-width: 300px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-  right: auto;        /* 기존 absolute 좌표 초기화 */
-  bottom: auto;
+    align-item: center;
   z-index: 10;        /* 텍스트 위에 떠있도록 레이어 지정 */
   pointer-events: auto;
 }
@@ -54,12 +50,6 @@ position: relative;
   height: auto;
   display: block;
      
-}
-
-/* 마우스 호버 상태 */
-.thumbnail-box img:hover {
- box-shadow: 0 0 25px 6px rgba(35, 31, 255, 0.7); /* 블러 크기(25px)와 퍼짐(6px)을 키워 더 진하게 번지게 함 */
-  transform: scale(1.02);
 }
 
 body{
