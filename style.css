@@ -37,7 +37,7 @@ text-align: left;
 position: relative;
   margin-top: 40px; /* absolute를 떼고 단순히 위 드롭다운과의 여백만 지정 */
   clear: both;
-    width: 33%;
+    width: 30%;
     min-width: 300px;
     align-item: center;
   z-index: 10;        /* 텍스트 위에 떠있도록 레이어 지정 */
