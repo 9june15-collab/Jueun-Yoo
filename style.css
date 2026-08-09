@@ -55,7 +55,6 @@ position: fixed;
   color: #FF3E12;
      align-items: center;
   /* [선택] 배경색을 주어 뒤에 지나가는 콘텐츠가 비치지 않게 보정 */
-  background-color: transparent; 
 }
 
 .thumbnail-box img {
@@ -63,6 +62,7 @@ position: fixed;
 
   height: auto;
   display: block;
+    mix-blend-mode: multiply;
      
 }
 
@@ -78,6 +78,7 @@ Background-color: #FFFD03;
     color: #FF3E12;
     padding-top:20px;
     
+    
 }
 
  a, p, h1, h2, h3, h4, h5, h6, li, summary {
@@ -85,7 +86,7 @@ Background-color: #FFFD03;
   width: 100%;           /* 화면이 좁아지면 가변적으로 줄어듦 */
   word-break: keep-all;  /* 한글/단어 단위 깨짐 방지 */
   overflow-wrap: break-word; /* 너무 긴 단어/URL이 들어올 때 박스를 뚫고 나가지 않도록 방지 */
-color: #FF3E12;
+color: #FFFC0A;
 
     font-size: 18px;
 } 
