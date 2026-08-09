@@ -14,37 +14,25 @@ width: 100%;
   display: flex;
   flex-direction: column;
   
-  /* 1. Flexbox 자식 요소들(박스 자체)을 가로 가운데로 배치 */    
+  /* 1. Flexbox 자식 요소들(박스 자체)을 가로 가운데로 배치 */
+  align-items: center;      
      padding: 0 50px 20px;
     padding-left: 10px;
       max-width: 1300px;
     margin: auto;
 text-align: left;
-     z-index: 90;  
 
 }
 .container_archive {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1410px;
   margin: 0 auto;               /* 💡 margin: 0 auto 대신 margin: 0 으로 설정하여 좌측 정렬 */
   /* padding: 0 10px; */
-    padding-left: 20px;
+    padding-left: 32px;
     padding-bottom: 20px;
       align-items: center;
   min-height: auto;
 }
-.sticky-text {
-  position: sticky;
-  top: 20px;          /* 화면 상단에서 20px 위치에 스크롤이 도달하면 고정됨 (필수) */
-  z-index: 100;       /* 스크롤 시 다른 텍스트나 이미지 위로 오도록 설정 */
-
-    text-align: center;
-    align-item: center;
-  
-  /* [선택] 배경색을 주어 뒤에 지나가는 콘텐츠가 비치지 않게 보정 */
-  background-color: transparent; 
-}
-
 .thumbnail-box {   
 position: relative;
   margin-top: 40px; /* absolute를 떼고 단순히 위 드롭다운과의 여백만 지정 */
@@ -66,7 +54,7 @@ position: relative;
 
 body{
 
- font-family: "Instrument Serif", serif;
+ font-family: "DM Mono", monospace;
   font-weight: 400;
   font-style: normal;
 letter-spacing: -0.3px;
@@ -85,7 +73,7 @@ line-height: 1.5;
   overflow-wrap: break-word; /* 너무 긴 단어/URL이 들어올 때 박스를 뚫고 나가지 않도록 방지 */
 /* color: #FF3E12; */
 
-    font-size: 24px;
+    font-size: 14px;
 } 
 
 /* 2차 수정본(상세페이지)*/
@@ -100,7 +88,7 @@ line-height: 1.5;
   z-index: 90;
   /* color: #FF3E12; */
   font-size: 14px;
-  padding: 20px 0;
+  padding: 4px 0;
   cursor: pointer;
     /* padding-top: 20px; */
     
@@ -112,6 +100,13 @@ line-height: 1.5;
 
 .project-title:hover {
     text-decoration: underline;
+}
+
+
+/* [오른쪽] 상세 패널 영역 */
+.detail-panel-area {
+    width: 45%;
+    position: relative;
 }
 
 .empty-state {
@@ -199,7 +194,7 @@ justify-content: center;
 }
 
 .project-info p {
-    font-size: 20px;
+    font-size: 14px;
   line-height: 1.5;
   white-space: pre-line;
 }
@@ -239,9 +234,16 @@ justify-content: center;
   position: static;
   z-index: 90;
   /* color: #FF3E12; */
+  font-size: 14px;
   padding: 4px 0;
   cursor: pointer;
 }
+.sub-header:hover{
+    
+    color: #F54927;
+    text-decoration: underline;
+}
+    
 
 .sub-header::-webkit-details-marker {
   display: none;
