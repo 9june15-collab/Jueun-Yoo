@@ -46,8 +46,8 @@ position: fixed;
 }
 
 .sticky-text {
-  position: sticky;
-  top: 20px;          /* 화면 상단에서 20px 위치에 스크롤이 도달하면 고정됨 (필수) */
+  position: fixed;
+  top: 10px;          /* 화면 상단에서 20px 위치에 스크롤이 도달하면 고정됨 (필수) */
     font-size: 22px;
   z-index: 100;       /* 스크롤 시 다른 텍스트나 이미지 위로 오도록 설정 */
   color: #F54927;
