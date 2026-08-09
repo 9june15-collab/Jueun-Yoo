@@ -139,7 +139,7 @@ line-height: 1.5;
 .dropdown-content {
     display: flex;
   flex-direction: column; /* 위에서 아래로 배치 */
-  gap: 30px;
+  gap: 10px;
   padding: 10px 0;
   /* margin-top: 30px; */
 }
@@ -216,12 +216,12 @@ justify-content: center;
 .detail-media {
     display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 10px;
   width: 100%;
 }
 
 .detail-media img {
-    width: 75%;
+    width: 100%;
     height: auto;
     display: block;
 }
