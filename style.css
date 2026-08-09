@@ -36,6 +36,7 @@ text-align: left;
     padding-bottom: 20px;
       align-items: center;
   min-height: auto;
+   
 }
 .thumbnail-box {   
 position: fixed;
@@ -72,9 +73,10 @@ body{
   font-style: normal;
 letter-spacing: -0.3px;
 line-height: 1.5;
-  
+  background-color: #1a1110;  
 /* Background-color: #FFFD03; */
     /* color: #FF3E12; */
+     color: #FFF;
     padding-top:20px;
     
 }
