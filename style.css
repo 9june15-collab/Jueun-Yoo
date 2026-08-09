@@ -239,16 +239,9 @@ justify-content: center;
   position: static;
   z-index: 90;
   /* color: #FF3E12; */
-  font-size: 14px;
   padding: 4px 0;
   cursor: pointer;
 }
-.sub-header:hover{
-    
-    color: #F54927;
-    text-decoration: underline;
-}
-    
 
 .sub-header::-webkit-details-marker {
   display: none;
