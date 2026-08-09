@@ -11,6 +11,7 @@ width: 100%;
 
   display: flex;
   flex-direction: column;
+     margin-top: -40px;
   
   /* 1. Flexbox 자식 요소들(박스 자체)을 가로 가운데로 배치 */
   align-items: left;      
