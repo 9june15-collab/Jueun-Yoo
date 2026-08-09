@@ -76,7 +76,7 @@ line-height: 1.4;
   overflow-wrap: break-word; /* 너무 긴 단어/URL이 들어올 때 박스를 뚫고 나가지 않도록 방지 */
 color: #231FFF;
 
-    font-size: 18px;
+    font-size: 14px;
 } 
 
 /* 2차 수정본(상세페이지)*/
@@ -90,7 +90,7 @@ color: #231FFF;
  position: static;
   z-index: 90;
   color: #231FFF;
-  font-size: 18px;
+  font-size: 14px;
   padding: 4px 0;
   cursor: pointer;
     /* padding-top: 20px; */
