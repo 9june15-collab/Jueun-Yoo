@@ -159,12 +159,11 @@ font-size: 0.8em;
     font-weight: bold;
 }
 
+summary::-webkit-details-marker {
+  display: none;
+}
 summary {
   list-style: none;
-}
-summary::-webkit-details-marker,
-.project-title::-webkit-details-marker {
-  display: none;
 }
 
 .hero-media {
