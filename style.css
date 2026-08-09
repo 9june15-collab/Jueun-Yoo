@@ -21,6 +21,7 @@ width: 100%;
       max-width: 1300px;
     margin: auto;
 text-align: left;
+    z-index: 90;
 
 }
 .container_archive {
