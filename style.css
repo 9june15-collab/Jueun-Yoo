@@ -162,7 +162,8 @@ font-size: 0.8em;
 summary {
   list-style: none;
 }
-summary::-webkit-details-marker {
+summary::-webkit-details-marker,
+.project-title::-webkit-details-marker {
   display: none;
 }
 
