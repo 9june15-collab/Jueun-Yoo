@@ -28,40 +28,38 @@ text-align: left;
   max-width: 1410px;
   margin: 0 auto;               /* 💡 margin: 0 auto 대신 margin: 0 으로 설정하여 좌측 정렬 */
   /* padding: 0 10px; */
-    padding-left: 20px;
+    padding-left: 32px;
     padding-bottom: 20px;
       align-items: center;
   min-height: auto;
 }
-.sticky-text {
-  position: sticky;
-  top: 20px;          /* 화면 상단에서 20px 위치에 스크롤이 도달하면 고정됨 (필수) */
-  z-index: 100;       /* 스크롤 시 다른 텍스트나 이미지 위로 오도록 설정 */
-
-    text-align: center;
-    align-item: center;
-  
-  /* [선택] 배경색을 주어 뒤에 지나가는 콘텐츠가 비치지 않게 보정 */
-  background-color: transparent; 
-}
-
 .thumbnail-box {   
 position: relative;
   margin-top: 40px; /* absolute를 떼고 단순히 위 드롭다운과의 여백만 지정 */
+  float: right;     /* 필요 시 오른쪽 정렬을 float으로 유지 */
   clear: both;
-    width: 30%;
+    width: 33%;
     min-width: 300px;
-    align-item: center;
+    padding-bottom: 20px;
+    padding-right: 20px;
+  right: auto;        /* 기존 absolute 좌표 초기화 */
+  bottom: auto;
   z-index: 10;        /* 텍스트 위에 떠있도록 레이어 지정 */
   pointer-events: auto;
 }
 
 .thumbnail-box img {
- width: 100%;
+ width: 150px;
 
   height: auto;
   display: block;
      
+}
+
+/* 마우스 호버 상태 */
+.thumbnail-box img:hover {
+ box-shadow: 0 0 25px 6px rgba(35, 31, 255, 0.7); /* 블러 크기(25px)와 퍼짐(6px)을 키워 더 진하게 번지게 함 */
+  transform: scale(1.02);
 }
 
 body{
@@ -73,7 +71,7 @@ letter-spacing: -0.3px;
 line-height: 1.5;
   
 /* Background-color: #FFFD03; */
-    /* color: #FF3E12; */
+    color: #FF3E12;
     padding-top:20px;
     
 }
@@ -83,7 +81,7 @@ line-height: 1.5;
   width: 100%;           /* 화면이 좁아지면 가변적으로 줄어듦 */
   word-break: keep-all;  /* 한글/단어 단위 깨짐 방지 */
   overflow-wrap: break-word; /* 너무 긴 단어/URL이 들어올 때 박스를 뚫고 나가지 않도록 방지 */
-/* color: #FF3E12; */
+color: #FF3E12;
 
     font-size: 14px;
 } 
@@ -98,7 +96,7 @@ line-height: 1.5;
 .project-title {
  position: static;
   z-index: 90;
-  /* color: #FF3E12; */
+  color: #FF3E12;
   font-size: 14px;
   padding: 4px 0;
   cursor: pointer;
@@ -245,7 +243,7 @@ justify-content: center;
 .sub-header {
   position: static;
   z-index: 90;
-  /* color: #FF3E12; */
+  color: #FF3E12;
   font-size: 14px;
   padding: 4px 0;
   cursor: pointer;
