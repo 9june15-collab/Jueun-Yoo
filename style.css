@@ -14,64 +14,66 @@ width: 100%;
   display: flex;
   flex-direction: column;
   
-  /* 1. Flexbox 자식 요소들(박스 자체)을 가로 가운데로 배치 */
-  align-items: center;      
+  /* 1. Flexbox 자식 요소들(박스 자체)을 가로 가운데로 배치 */    
      padding: 0 50px 20px;
     padding-left: 10px;
       max-width: 1300px;
     margin: auto;
 text-align: left;
+     z-index: 90;  
 
 }
 .container_archive {
   width: 100%;
-  max-width: 1410px;
+  max-width: 1200px;
   margin: 0 auto;               /* 💡 margin: 0 auto 대신 margin: 0 으로 설정하여 좌측 정렬 */
   /* padding: 0 10px; */
-    padding-left: 32px;
+    padding-left: 20px;
     padding-bottom: 20px;
       align-items: center;
   min-height: auto;
 }
+.sticky-text {
+  position: sticky;
+  top: 20px;          /* 화면 상단에서 20px 위치에 스크롤이 도달하면 고정됨 (필수) */
+  z-index: 100;       /* 스크롤 시 다른 텍스트나 이미지 위로 오도록 설정 */
+
+    text-align: center;
+    align-item: center;
+  
+  /* [선택] 배경색을 주어 뒤에 지나가는 콘텐츠가 비치지 않게 보정 */
+  background-color: transparent; 
+}
+
 .thumbnail-box {   
 position: relative;
   margin-top: 40px; /* absolute를 떼고 단순히 위 드롭다운과의 여백만 지정 */
-  float: right;     /* 필요 시 오른쪽 정렬을 float으로 유지 */
   clear: both;
-    width: 33%;
+    width: 30%;
     min-width: 300px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-  right: auto;        /* 기존 absolute 좌표 초기화 */
-  bottom: auto;
+    align-item: center;
   z-index: 10;        /* 텍스트 위에 떠있도록 레이어 지정 */
   pointer-events: auto;
 }
 
 .thumbnail-box img {
- width: 150px;
+ width: 100%;
 
   height: auto;
   display: block;
      
 }
 
-/* 마우스 호버 상태 */
-.thumbnail-box img:hover {
- box-shadow: 0 0 25px 6px rgba(35, 31, 255, 0.7); /* 블러 크기(25px)와 퍼짐(6px)을 키워 더 진하게 번지게 함 */
-  transform: scale(1.02);
-}
-
 body{
 
- font-family: "DM Mono", monospace;
+ font-family: "Instrument Serif", serif;
   font-weight: 400;
   font-style: normal;
 letter-spacing: -0.3px;
 line-height: 1.5;
   
 /* Background-color: #FFFD03; */
-    color: #FF3E12;
+    /* color: #FF3E12; */
     padding-top:20px;
     
 }
@@ -81,9 +83,9 @@ line-height: 1.5;
   width: 100%;           /* 화면이 좁아지면 가변적으로 줄어듦 */
   word-break: keep-all;  /* 한글/단어 단위 깨짐 방지 */
   overflow-wrap: break-word; /* 너무 긴 단어/URL이 들어올 때 박스를 뚫고 나가지 않도록 방지 */
-color: #FF3E12;
+/* color: #FF3E12; */
 
-    font-size: 14px;
+    font-size: 24px;
 } 
 
 /* 2차 수정본(상세페이지)*/
@@ -96,9 +98,9 @@ color: #FF3E12;
 .project-title {
  position: static;
   z-index: 90;
-  color: #FF3E12;
+  /* color: #FF3E12; */
   font-size: 14px;
-  padding: 4px 0;
+  padding: 20px 0;
   cursor: pointer;
     /* padding-top: 20px; */
     
@@ -110,13 +112,6 @@ color: #FF3E12;
 
 .project-title:hover {
     text-decoration: underline;
-}
-
-
-/* [오른쪽] 상세 패널 영역 */
-.detail-panel-area {
-    width: 45%;
-    position: relative;
 }
 
 .empty-state {
@@ -204,7 +199,7 @@ justify-content: center;
 }
 
 .project-info p {
-    font-size: 14px;
+    font-size: 20px;
   line-height: 1.5;
   white-space: pre-line;
 }
@@ -243,17 +238,10 @@ justify-content: center;
 .sub-header {
   position: static;
   z-index: 90;
-  color: #FF3E12;
-  font-size: 14px;
+  /* color: #FF3E12; */
   padding: 4px 0;
   cursor: pointer;
 }
-.sub-header:hover{
-    
-    color: #F54927;
-    text-decoration: underline;
-}
-    
 
 .sub-header::-webkit-details-marker {
   display: none;
