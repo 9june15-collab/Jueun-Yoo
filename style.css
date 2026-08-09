@@ -32,6 +32,9 @@ text-align: left;
     padding-bottom: 20px;
       align-items: center;
   min-height: auto;
+    font-family: "DM Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 .sticky-text {
   position: sticky;
@@ -51,7 +54,7 @@ position: absolute; /* container 내부 자유로운 위치에 배치 */
   /* container 기준 원하는 위치 지정 */
   top: 30px;          /* 위에서 30px 위치 */
   right: 50px;        /* 오른쪽에서 50px 위치 */
-    width: 30%;
+    width: 40%;
     min-width: 300px;
     align-item: center;
   z-index: 10;        /* 텍스트 위에 떠있도록 레이어 지정 */
