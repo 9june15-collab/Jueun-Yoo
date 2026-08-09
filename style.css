@@ -39,11 +39,11 @@ text-align: left;
 .thumbnail-box {   
 position: fixed;
  
-    width: 90%;
+    width: 80%;
     min-width: 300px;
     align-item: right;
   z-index: 10;        /* 텍스트 위에 떠있도록 레이어 지정 */
-     mix-blend-mode: multiply;
+     /* mix-blend-mode: multiply; */
 }
 
 .sticky-text {
