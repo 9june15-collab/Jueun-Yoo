@@ -97,10 +97,16 @@ line-height: 1.5;
 }
 
 .project-title {
- position: static;
+position: sticky;
+  top: 20px;            /* 💡 sticky-text에 지정한 top 값과 동일하게 설정 */
   z-index: 90;
-  color: #FF3E12;
-  font-size: 14px;
+
+  /* 전체 페이지 기준 가로 중앙 정렬 */
+  justify-self: center; /* Grid 아이템 자체를 가로 중앙 배치 */
+  text-align: center;   /* 텍스트 내용 가로 중앙 정렬 */
+
+  color: #F54927;
+  font-size: 16px;
   padding: 4px 0;
   cursor: pointer;
     /* padding-top: 20px; */
