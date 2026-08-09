@@ -24,6 +24,9 @@ text-align: left;
     z-index: 90;
 
 }
+.header{
+    z-index: 90;
+}
 .container_archive {
   width: 100%;
   max-width: 1410px;
