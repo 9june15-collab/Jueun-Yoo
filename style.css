@@ -138,7 +138,6 @@ line-height: 1.5;
   /* margin-top: 30px; */
 }
 details[open] > summary::before {
-  content: "𖭅"; /* 💡 펼쳐졌을 때 바뀔 기호 (또는 회전효과) */
 font-size: 0.8em;
     font-weight: bold;
 }
