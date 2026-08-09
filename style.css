@@ -191,7 +191,6 @@ justify-content: center;
 .project-info {
    position: static;
   /* top: 30px;*/
-    max-width: 600px;
   z-index: 80;
   /* padding: 12px 0; */
     
