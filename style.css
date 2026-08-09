@@ -14,13 +14,13 @@ width: 100%;
   display: flex;
   flex-direction: column;
   
-  /* 1. Flexbox 자식 요소들(박스 자체)을 가로 가운데로 배치 */
-  align-items: center;      
+  /* 1. Flexbox 자식 요소들(박스 자체)을 가로 가운데로 배치 */    
      padding: 0 50px 20px;
     padding-left: 10px;
       max-width: 1300px;
     margin: auto;
 text-align: left;
+     z-index: 90;  
 
 }
 .container_archive {
@@ -49,9 +49,9 @@ text-align: left;
 position: relative;
   margin-top: 40px; /* absolute를 떼고 단순히 위 드롭다운과의 여백만 지정 */
   clear: both;
-    width: 30%;
+    width: 60%;
     min-width: 300px;
-    align-item: center;
+    align-item: right;
   z-index: 10;        /* 텍스트 위에 떠있도록 레이어 지정 */
   pointer-events: auto;
 }
