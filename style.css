@@ -46,9 +46,11 @@ text-align: left;
 }
 
 .thumbnail-box {   
-position: relative;
-  margin-top: 40px; /* absolute를 떼고 단순히 위 드롭다운과의 여백만 지정 */
-  clear: both;
+position: absolute; /* container 내부 자유로운 위치에 배치 */
+  
+  /* container 기준 원하는 위치 지정 */
+  top: 30px;          /* 위에서 30px 위치 */
+  right: 50px;        /* 오른쪽에서 50px 위치 */
     width: 30%;
     min-width: 300px;
     align-item: center;
