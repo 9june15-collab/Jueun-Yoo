@@ -46,7 +46,7 @@ position: fixed;
   margin-top: 0;
     width: 90%;
     min-width: 300px;
-    align-item: center;
+    align-item: right;
   z-index: 10;        /* 텍스트 위에 떠있도록 레이어 지정 */
   pointer-events: auto;
 }
@@ -56,6 +56,7 @@ position: fixed;
     font-size: 22px;
   z-index: 100;       /* 스크롤 시 다른 텍스트나 이미지 위로 오도록 설정 */
   color: #FF3E12;
+     align-items: center;
   /* [선택] 배경색을 주어 뒤에 지나가는 콘텐츠가 비치지 않게 보정 */
   background-color: transparent; 
 }
