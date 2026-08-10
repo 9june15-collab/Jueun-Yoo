@@ -90,7 +90,7 @@ color: #F54927;
     font-size: 18px;
 } 
 .highlight {
-  font-weight: bold; /* 또는 font-weight: 700; */
+  font-weight: 500; /* 또는 font-weight: 700; */
 }
 
 /* 2차 수정본(상세페이지)*/
