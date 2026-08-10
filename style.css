@@ -5,22 +5,10 @@
 }
 
 .container {
-width: 100%;
-
+display: grid;
+  width: 100%;
+  max-width: 1300px;
   margin: 0 auto;
-
-  display: flex;
-  flex-direction: column;
-     margin-top: -40px;
-  
-  /* 1. Flexbox 자식 요소들(박스 자체)을 가로 가운데로 배치 */
-  align-items: left;      
-     paddin-top: 10px;
-    padding-left: 10px;
-      max-width: 1300px;
-    margin: auto;
-text-align: left;
-    z-index: 90;
 
 }
 
@@ -35,8 +23,7 @@ text-align: left;
    
 }
 .thumbnail-box {   
-position: fixed;
- 
+ grid-area: 1 / 1;
     width: 80%;
     min-width: 300px;
     align-item: right;
