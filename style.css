@@ -60,7 +60,8 @@ position: fixed;
  width: 100%;
 
   height: auto;
-  display: block;
+ left: 100%;          /* container의 오른쪽 끝에서 시작 */
+  margin-left: 20px;
    
      
 }
