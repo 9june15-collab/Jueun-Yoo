@@ -23,7 +23,7 @@ display: grid;
    
 }
 .thumbnail-box {   
- grid-area: 1 / 1;
+ grid-area: 2 / 1;
     width: 80%;
     min-width: 300px;
     align-item: right;
