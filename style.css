@@ -15,7 +15,7 @@ display: grid;
 .container_archive {
   width: 100%;
   max-width: 1410px;
-  margin: 0 auto;               /* 💡 margin: 0 auto 대신 margin: 0 으로 설정하여 좌측 정렬 */
+  margin: 0 auto;            
   /* padding: 0 10px; */
     margin-top: -40px;
     padding-left: 20px;
@@ -37,7 +37,6 @@ display: grid;
   z-index: 100;       /* 스크롤 시 다른 텍스트나 이미지 위로 오도록 설정 */
   color: #F54927;
      align-items: right;
-  /* [선택] 배경색을 주어 뒤에 지나가는 콘텐츠가 비치지 않게 보정 */
 }
 
 .thumbnail-box img {
@@ -58,7 +57,6 @@ body{
 letter-spacing: -0.3px;
 line-height: 1.5;
 
-/* Background-color: #FFFC0A; */
     color: #F54927;
     padding-top:20px;
     
@@ -93,7 +91,7 @@ color: #F54927;
 
 .project-title {
 position: sticky;
-  top: 20px;            /* 💡 sticky-text에 지정한 top 값과 동일하게 설정 */
+  top: 20px;           
   z-index: 90;
 
   /* 전체 페이지 기준 가로 중앙 정렬 */
@@ -145,7 +143,7 @@ position: sticky;
   /* margin-top: 30px; */
 }
 details[open] > summary::before {
-  content: "𖭅"; /* 💡 펼쳐졌을 때 바뀔 기호 (또는 회전효과) */
+  content: "𖭅"; 
   color: #F54927;     /* 글리프 색상 변경 */
     list-style: none;
 }
@@ -235,75 +233,6 @@ justify-content: center;
     width: 100%;
     height: auto;
     display: block;
-}
-/* 하위 드롭다운 */
-
-.sub-dropdown-group {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  width: 100%;
-}
-
-/* 서브 드롭다운 아이템 */
-.sub-dropdown {
-  width: 100%;
-}
-
-.sub-dropdown[open] {
-}
-
-/* 서브 드롭다운 타이틀 바 */
-.sub-header {
-  position: static;
-  z-index: 90;
-  /* color: #FF3E12; */
-  font-size: 14px;
-  padding: 4px 0;
-  cursor: pointer;
-}
-.sub-header:hover{
-    
-    color: #F54927;
-    text-decoration: underline;
-}
-    
-
-.sub-header::-webkit-details-marker {
-  display: none;
-}
-
-/* 서브 열렸을 때 아이콘 변경 */
-.sub-dropdown[open] .sub-icon::before {
-  content: "−";
-}
-
-/* 서브 드롭다운 내부 펼침 콘텐츠 */
-.sub-content {
-  padding: 16px;
-}
-
-/* 이미지 미디어 그리드는 기존 2열 유지 */
-.sub-content .detail-media {
-      display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  width: 100%;
-}
-
-.sub-content .detail-media img {
-  width: 90%;
-    height: auto;
-    display: block;}
-.full-width-image {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  
-  /* 위아래 간격만 지정 */
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 /* 화면이 좁아지는 모바일 환경 분기 */
