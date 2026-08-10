@@ -23,10 +23,7 @@ text-align: left;
     z-index: 90;
 
 }
-.header{
-    z-index: 90;
-    font-size: 14px;
-}
+
 .container_archive {
   width: 100%;
   max-width: 1410px;
@@ -92,6 +89,12 @@ color: #F54927;
 } 
 .highlight {
   font-weight: 500; /* 또는 font-weight: 700; */
+}
+.header{
+    z-index: 90;
+     font-size: 14px;
+  line-height: 1.5;
+  white-space: pre-line;
 }
 
 /* 2차 수정본(상세페이지)*/
