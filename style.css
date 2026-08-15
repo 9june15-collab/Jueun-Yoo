@@ -169,7 +169,7 @@ details[open] summary {
   width: 100%;
   position: static;
   background-color: #f0f0f0; 
-  aspect-ratio: 16 / 9;     }
+       }
 
 .hero-media img {
   width: 100%;
