@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jueun Yoo</title>
+  <link rel="preload" as="image" href="images/Mtg_hero.webp" type="image/webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DotGothic16&display=swap" rel="stylesheet">
@@ -24,10 +25,14 @@
           </summary>
 
           <!-- 드롭다운으로 아래에 펼쳐지는 내용 -->
-          <div class="dropdown-content">
-            <div class="hero-media">
-      <img src="images/Mtg_hero.png" alt="Main Hero Image">
-    </div>
+          <div class="hero-media">
+  <img src="images/Mtg_hero.webp" 
+    alt="Main Hero Image"
+    width="1920" 
+    height="1080"
+    fetchpriority="high"
+    decoding="async">
+</div>
             <div class="project-info">
               <p id="detailDescription"><span class="highlight">MindTheGap</span> is a visual discourse on personal space within public transportation. 
               We all pay fares for access to public transportation services. Paying creates illusion that we can buy ourselves a certain amount of personal space within the confines of subways, trains, and buses. In reality, we have all sat or stood in overly crowded compartments gasping air, or noticed fellow passengers' belongings taking up extra seats. </p>
