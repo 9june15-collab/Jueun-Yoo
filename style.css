@@ -140,7 +140,7 @@ position: sticky;
   flex-direction: column; /* 위에서 아래로 배치 */
   gap: 10px;
   padding: 10px 0;
-    padding-left:10px;
+    padding-left:20px;
   /* margin-top: 30px; */
 }
 details[open] > summary::before {
