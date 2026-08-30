@@ -7,14 +7,14 @@
 .container {
 display: grid;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
 
 }
 
 .container_archive {
   width: 100%;
-  max-width: 1410px;
+  max-width: 1300px;
   margin: 0 auto;            
   /* padding: 0 10px; */
     margin-top: -40px;
