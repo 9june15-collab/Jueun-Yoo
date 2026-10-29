@@ -7,14 +7,14 @@
 .container {
 display: grid;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
 
 }
 
 .container_archive {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1410px;
   margin: 0 auto;            
   /* padding: 0 10px; */
     margin-top: -40px;
@@ -69,17 +69,18 @@ line-height: 1.5;
   word-break: keep-all;  /* 한글/단어 단위 깨짐 방지 */
   overflow-wrap: break-word; /* 너무 긴 단어/URL이 들어올 때 박스를 뚫고 나가지 않도록 방지 */
 color: #F54927;
+
+    font-size: 18px;
 } 
 .highlight {
   font-weight: 500; /* 또는 font-weight: 700; */
 }
 .header{
-  display: grid;
+    grid-area: 1 / 1;
     z-index: 90;
      font-size: 14px;
   line-height: 1.5;
-    padding-left: 20px;
-    padding-top: 10px;
+    paddling-left: 20px;
 }
 
 /* 2차 수정본(상세페이지)*/
